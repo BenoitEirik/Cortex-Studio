@@ -1,5 +1,6 @@
 <template>
-  <div class="100vw min-h-screen bg-black">
+  <div class="relative 100vw min-h-screen">
+    <Header />
     <NuxtPage />
   </div>
 </template>
