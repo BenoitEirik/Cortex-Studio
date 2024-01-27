@@ -192,7 +192,6 @@ const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
   }
 
   &:hover {
-
     @apply text-gray-800 border-gray-800;
 
     &:before {
