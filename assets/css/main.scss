@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  /* fix for Chrome */
+  @apply text-gray-900;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+  background-color: #f6f6f9;
+  --var-color-1: rgba(150, 255, 160, 1);
+  --var-color-2: rgba(118, 213, 255, 1);
+  --var-color-3: rgba(199, 36, 221, 1);
+  --var-color-4: rgba(255, 255, 173, 1);
+
+  --var-header-height: 90px;
+
+  @function var-color($num, $opacity) {
+    @return rgba(255, 255, 173, $opacity);
+  }
+}

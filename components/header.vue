@@ -1,12 +1,21 @@
 <template>
 <div class="absolute z-10 w-screen flex justify-center">
-  <nav ref="headerRef" class="max-w-6xl w-full h-[80px] p-6 flex justify-between items-center">
+  <nav ref="headerRef" class="max-w-7xl w-full h-[var(--var-header-height)] p-6 flex justify-between items-center">
     <NuxtLink to="/">
       <NuxtImg id="logo" width="200px" src="logo.png" />
     </NuxtLink>
-    <ul>
-      <li class="text-lg text-white">
-        <NuxtLink to="#contact">Contact</NuxtLink>
+    <ul class="px-4 py-2 flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold']">
+      <li>
+        <NuxtLink to="#notre-travail" class="font-bold">Notre travail</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="#nos-services" class="font-bold">Nos services</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="#le-studio" class="font-bold">Le studio</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="#contactez-nous" class="font-bold">Contactez-nous</NuxtLink>
       </li>
     </ul>
   </nav>
