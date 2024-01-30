@@ -1,5 +1,5 @@
 <template>
-<div class="absolute z-10 w-screen flex justify-center">
+<header class="absolute z-10 w-screen flex justify-center">
   <nav ref="headerRef" class="max-w-7xl w-full h-[var(--var-header-height)] p-6 flex justify-between items-center">
     <NuxtLink to="/">
       <NuxtImg id="logo" width="200px" src="logo.png" />
@@ -19,7 +19,7 @@
       </li>
     </ul>
   </nav>
-</div>
+</header>
 </template>
 
 <script lang="ts" setup>
