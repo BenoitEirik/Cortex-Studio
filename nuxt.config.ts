@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.scss', 'animate.css/animate.min.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt'],
   app: {
     head: {
       htmlAttrs: {

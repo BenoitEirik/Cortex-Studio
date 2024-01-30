@@ -14,7 +14,7 @@
       </div>
       <div id="box_video"
         class="xl:basis-2/3 relative rounded-md py-8 bg-black border-4 border-gray-800 max-w-[800px] w-full animate__animated animate__fadeIn">
-        <video ref="landingVideoRef" autoplay muted :src="landingVideos[indexLandingVideo].src"
+        <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src"
           @ended="nextLandingVideo(undefined)" @dblclick="landingVideoFullscreen" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
@@ -426,6 +426,13 @@ const brands = [
 ]
 
 const landingVideoRef = ref<HTMLMediaElement>()
+watch(useElementVisibility(landingVideoRef), (value) => {
+  if (value) {
+    landingVideoRef.value?.play()
+  } else {
+    landingVideoRef.value?.pause()
+  }
+})
 const indexLandingVideo = ref(0)
 const landingVideos = [
   {
