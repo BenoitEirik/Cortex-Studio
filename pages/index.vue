@@ -24,7 +24,7 @@
       </div>
     </section>
     <section class="shrink-0 max-w-full">
-      <div class="max-w-7xl">
+      <div id="logo_slider" class="max-w-7xl">
         <Swiper :modules="[SwiperAutoplay]" :loop="true" slides-per-view="auto" :speed="7000" :allow-touch-move="false"
           :autoplay="{
             delay: 1,
@@ -44,15 +44,17 @@
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Notre travail</h2>
         <UiHr />
       </header>
-      <div class="w-full flex justify-evenly items-center">
-        <div class="basis-1/2 max-w-[800px] w-full bg-black border-4 border-gray-800 rounded video-perspective overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" autoplay loop muted class="w-full" />
+      <div class="px-4 py-20 w-full flex justify-evenly items-center">
+        <div
+          class="basis-1/2 max-w-[800px] w-full bg-black border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" autoplay loop muted
+            class="w-full" />
         </div>
         <article class="basis-1/2 max-w-[800px] text-left flex flex-col gap-8 items-end">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Showreel</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Créer des expériences digitales</h4>
           <p class="text-right text-lg leading-8">
-            Creative Studio a l'expertise pour déterminer la stratégie de contenus et la réaliser,
+            <strong>Creative Studio</strong> a l'expertise pour déterminer la stratégie de contenus et la réaliser,
             procéder à la captation, au traitement du visuel, du son et à sa diffusion.
             <br>
             Des divisions articulées pour évoquer les marques (.prod.post.rec.link).
@@ -60,6 +62,26 @@
             Creative Studio est le partenaire des projets artistiques et commerciaux.
           </p>
         </article>
+      </div>
+      <div class="p-4 w-full flex justify-evenly items-center">
+        <article class="basis-1/2 max-w-[800px] text-left flex flex-col gap-8 items-start">
+          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Métiers</h3>
+          <h4 class="text-2xl font-['ClashDisplay-Bold']">Pure player indépendant</h4>
+          <p class="text-left text-lg leading-8">
+            Spécialisé dans la production digitale et audiovisuelle, <strong>Cortext Studio</strong> constitue
+            un maillage de compétences pluri-disciplinaires
+            qui rend possible les projets
+            les plus qualitatifs et exigeants.
+          </p>
+          <blockquote class="text-lg italic">
+            « De la réflexion à la diffusion, CS déploie votre communication digitale. »
+          </blockquote>
+        </article>
+        <div
+          class="basis-1/2 max-w-[800px] w-full bg-black border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" autoplay loop
+            muted class="w-full" />
+        </div>
       </div>
     </section>
 
@@ -84,17 +106,17 @@
     </section>
 
     <section id="contactez-nous"
-      class="mt-[var(--var-header-height)] p-4 max-w-7xl w-full bg-gray-900 text-white rounded-3xl">
+      class="mt-[var(--var-header-height)] p-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="p-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Contactez-nous</h2>
         <UiHr />
       </header>
-      <div class="p-4 flex gap-4 justify-evenly">
-        <div class="basis-1/2 max-w-[400px]">
-          <p class="text-lg text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt et nous serions
+      <div class="p-4 flex lg:flex-row flex-col gap-4 justify-evenly">
+        <div class="basis-1/2 lg:max-w-[400px] flex flex-col">
+          <p class="shrink-0 text-lg text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt et nous serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
             potentielles, n'hésitez pas à nous contacter en utilisant ce formulaire.</p>
-          <NuxtImg src="icons/paper-plane.svg" width="300px" class="m-auto" />
+          <NuxtImg src="icons/paper-plane.svg" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
         <form @click.prevent="" class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">
@@ -208,39 +230,39 @@ const nextLandingVideo = (index: number | undefined) => {
 const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
 </script>
 
-<style>
-.swiper-wrapper {
-  transition-timing-function: linear;
-}
-
-.swiper-slide {
-  display: flex;
-  padding: 10px 50px;
-  width: auto;
-}
-
-.swiper::before,
-.swiper::after {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-image: linear-gradient(90deg, rgb(17, 24, 39, 1), transparent);
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.swiper::after {
-  left: auto;
-  right: 0;
-  background-image: linear-gradient(270deg, rgb(17, 24, 39, 1), transparent);
-}
-</style>
-
 <style lang="scss">
+#logo_slider {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    display: flex;
+    padding: 10px 50px;
+    width: auto;
+  }
+
+  .swiper::before,
+  .swiper::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgb(17, 24, 39, 1), transparent);
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .swiper::after {
+    left: auto;
+    right: 0;
+    background-image: linear-gradient(270deg, rgb(17, 24, 39, 1), transparent);
+  }
+}
+
 #cta-btn,
 #form-btn {
   position: relative;
@@ -291,8 +313,19 @@ const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
   background: linear-gradient(-150deg, var-color(1, 50%), #f6f6f9 20% 100%);
 }
 
-.video-perspective {
+.video_perspective_left {
   transform: perspective(1500px) rotateY(15deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
+}
+
+.video_perspective_right {
+  transform: perspective(1500px) rotateY(-15deg);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   transition: transform 1s ease 0s;
