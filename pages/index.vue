@@ -24,7 +24,7 @@
       </div>
     </section>
     <section class="shrink-0 max-w-full">
-      <div id="logo_slider" class="max-w-7xl">
+      <div id="logo_slider" class="py-4 max-w-7xl">
         <Swiper :modules="[SwiperAutoplay]" :loop="true" slides-per-view="auto" :speed="7000" :allow-touch-move="false"
           :autoplay="{
             delay: 1,
@@ -48,8 +48,8 @@
       <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none" muted loop
-            class="w-full" />
+          <video ref="articleVideo1Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none"
+            muted loop class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-end">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Showreel</h3>
@@ -76,21 +76,22 @@
             les plus qualitatifs et exigeants.
           </p>
           <blockquote>
-            <p class="text-lg italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre communication digitale. »</p>
+            <p class="text-lg italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre
+              communication digitale. »</p>
           </blockquote>
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo2Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none"
+            loop muted class="w-full" />
         </div>
       </article>
 
       <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo3Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none"
+            loop muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Expérimentations</h3>
@@ -126,7 +127,7 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop
+          <video ref="articleVideo4Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop
             muted class="w-full" />
         </div>
       </article>
@@ -141,8 +142,8 @@
       <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop muted
-            class="w-full" />
+          <video ref="articleVideo5Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Stratégie</h3>
@@ -151,7 +152,7 @@
             À chaque étape, <strong>Cortex Studio</strong> déploie des stratégies qui favorisent la pertinence des
             contenus.
             <br>
-            Alors que la stratégie marketingva identifier un besoin de communication, la stratégie de contenu propose «
+            Alors que la stratégie marketing va identifier un besoin de communication, la stratégie de contenu propose «
             le comment ».
             <br>
             Elle dresse la route à suivre pour s'exprimer et les processus de productions adaptées.
@@ -198,16 +199,16 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop muted
-            class="w-full" />
+          <video ref="articleVideo6Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
       </article>
 
       <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo7Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none"
+            loop muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Production</h3>
@@ -243,8 +244,8 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo8Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none"
+            loop muted class="w-full" />
         </div>
       </article>
     </section>
@@ -258,8 +259,8 @@
       <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" preload="none" loop muted
-            class="w-full" />
+          <video ref="articleVideo9Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Vision</h3>
@@ -337,7 +338,7 @@
     </section>
 
     <section id="contactez-nous"
-      class="mt-[var(--var-header-height)] p-4 my-8 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
+      class="mt-[var(--var-header-height)] mb-8 px-4 py-8 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="p-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Contactez-nous</h2>
         <UiSubline />
@@ -472,8 +473,38 @@ const nextLandingVideo = (index: number | undefined) => {
   } else {
     indexLandingVideo.value++
   }
+  nextTick(() => {
+    landingVideoRef.value?.play()
+  })
 }
 const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
+
+const articleVideo1Ref = ref<HTMLMediaElement>()
+const articleVideo2Ref = ref<HTMLMediaElement>()
+const articleVideo3Ref = ref<HTMLMediaElement>()
+const articleVideo4Ref = ref<HTMLMediaElement>()
+const articleVideo5Ref = ref<HTMLMediaElement>()
+const articleVideo6Ref = ref<HTMLMediaElement>()
+const articleVideo7Ref = ref<HTMLMediaElement>()
+const articleVideo8Ref = ref<HTMLMediaElement>()
+const articleVideo9Ref = ref<HTMLMediaElement>()
+watch(useElementVisibility(articleVideo1Ref), (value) => playVideoFromRef(articleVideo1Ref, value))
+watch(useElementVisibility(articleVideo2Ref), (value) => playVideoFromRef(articleVideo2Ref, value))
+watch(useElementVisibility(articleVideo3Ref), (value) => playVideoFromRef(articleVideo3Ref, value))
+watch(useElementVisibility(articleVideo4Ref), (value) => playVideoFromRef(articleVideo4Ref, value))
+watch(useElementVisibility(articleVideo5Ref), (value) => playVideoFromRef(articleVideo5Ref, value))
+watch(useElementVisibility(articleVideo6Ref), (value) => playVideoFromRef(articleVideo6Ref, value))
+watch(useElementVisibility(articleVideo7Ref), (value) => playVideoFromRef(articleVideo7Ref, value))
+watch(useElementVisibility(articleVideo8Ref), (value) => playVideoFromRef(articleVideo8Ref, value))
+watch(useElementVisibility(articleVideo9Ref), (value) => playVideoFromRef(articleVideo9Ref, value))
+
+function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boolean) {
+  if (value) {
+    video.value?.play()
+  } else {
+    video.value?.pause()
+  }
+}
 </script>
 
 <style lang="scss">

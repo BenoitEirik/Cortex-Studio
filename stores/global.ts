@@ -5,7 +5,6 @@ export const useGlobalStore = defineStore('globalStore', () => {
   
   const setHeaderHeight = (height: number) => {
     headerHeight.value = height
-    console.log('height:',height)
   }
 
   return { headerHeight, setHeaderHeight }
