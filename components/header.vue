@@ -1,6 +1,6 @@
 <template>
-<header class="absolute z-10 w-screen flex justify-center">
-  <nav ref="headerRef" class="max-w-7xl w-full h-[var(--var-header-height)] p-6 flex justify-between items-center">
+<header class="sticky top-0 h-0 z-10 w-screen flex justify-center">
+  <nav ref="headerRef" class="absolute xl:top-2 top-0 max-w-7xl w-full max-h-[var(--var-header-height)] px-6 py-4 flex justify-between items-center xl:rounded-3xl rounded-b-3xl" :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)':'none' }">
     <NuxtLink to="/">
       <NuxtImg id="logo" width="200px" src="logo.png" alt="Cortex Studio logo" />
     </NuxtLink>
@@ -26,6 +26,17 @@
 import { useGlobalStore } from '@/stores/global'
 
 const globalStore = useGlobalStore()
+
+const { y } = useWindowScroll()
+
+const scrolling = computed(() => {
+  if (y.value > window.innerHeight * 0.8) {
+    return true
+  } else {
+    return false
+  }
+})
+
 
 const headerRef = ref<HTMLElement>()
 onMounted(() => {
