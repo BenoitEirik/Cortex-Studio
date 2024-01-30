@@ -45,7 +45,7 @@
         <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="showreel" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo1Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none"
@@ -65,7 +65,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="jobs" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Métiers</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Pure player indépendant</h4>
@@ -87,7 +87,7 @@
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="experimentations" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo3Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none"
@@ -108,7 +108,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="offers" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Offres</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Des offres pour les annonceurs, les agences et les producteurs
@@ -139,7 +139,7 @@
         <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="stategy" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo5Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop
@@ -171,7 +171,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="creation" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Création</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">L'essence et la forme</h4>
@@ -204,7 +204,7 @@
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="production" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo7Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none"
@@ -227,7 +227,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="technology" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Technologie</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Incubateur d'inspiration</h4>
@@ -256,7 +256,7 @@
         <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="vision" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo9Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" preload="none" loop
@@ -279,7 +279,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="model" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Modèle</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Quatre pôles d'expertises complémentaires</h4>
@@ -300,7 +300,7 @@
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="references" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <NuxtImg src="http://www.cortexstudio.fr/assets/img/references.jpg" alt="references.jpg" class="w-full" />
@@ -321,7 +321,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
+      <article id="historical" class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Historique</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Artisan sonore et visuel depuis 2005</h4>
