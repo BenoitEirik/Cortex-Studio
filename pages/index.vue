@@ -48,8 +48,9 @@
       <article id="showreel" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo1Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none"
-            muted loop class="w-full" />
+          <video ref="articleVideo1Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none" muted
+            loop class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-end">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Showreel</h3>
@@ -82,16 +83,18 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo2Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none"
-            loop muted class="w-full" />
+          <video ref="articleVideo2Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
       </article>
 
       <article id="experimentations" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo3Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none"
-            loop muted class="w-full" />
+          <video ref="articleVideo3Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Expérimentations</h3>
@@ -127,8 +130,9 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo4Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo4Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop muted
+            class="w-full" />
         </div>
       </article>
     </section>
@@ -142,7 +146,8 @@
       <article id="strategy" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo5Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop
+          <video ref="articleVideo5Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop
             muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
@@ -199,7 +204,8 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo6Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop
+          <video ref="articleVideo6Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop
             muted class="w-full" />
         </div>
       </article>
@@ -207,8 +213,9 @@
       <article id="production" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo7Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none"
-            loop muted class="w-full" />
+          <video ref="articleVideo7Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Production</h3>
@@ -244,8 +251,9 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo8Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none"
-            loop muted class="w-full" />
+          <video ref="articleVideo8Ref"
+            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none" loop
+            muted class="w-full" />
         </div>
       </article>
     </section>
@@ -259,8 +267,8 @@
       <article id="vision" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo9Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" preload="none" loop
-            muted class="w-full" />
+          <video ref="articleVideo9Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
+            preload="none" loop muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Vision</h3>
@@ -332,7 +340,24 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="" preload="none" loop muted class="w-full" />
+          <div class="w-full aspect-video bg-[var(--var-color-bg)] flex flex-col justify-center items-center">
+            <div class="p-2 flex gap-4 justify-evenly items-center border-b-4 border-dashed text-lg font-bold">
+              <span class="text-xs">2006</span>
+              <span class="text-sm">2007</span>
+              <span class="text-base">2008</span>
+              <span class="text-lg">2009</span>
+              <span class="text-xl">2010</span>
+              <span class="text-2xl">2012</span>
+              <span class="text-3xl">2015</span>
+              <span class="text-4xl">2019</span>
+              <span class="text-5xl">2024</span>
+            </div>
+            <p class="p-8 text-center text-xl">
+              L'activité s'installe dans un studio du 10eme arrondissement de Paris.
+              <br>
+              Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la vidéo.
+            </p>
+          </div>
         </div>
       </article>
     </section>
@@ -614,5 +639,4 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}
-</style>
+}</style>
