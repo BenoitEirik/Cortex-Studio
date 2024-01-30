@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator'],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'fr'
+      },
       link: [
         { rel: 'preconnect', href: 'https://rsms.me/' },
         { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },

@@ -14,11 +14,11 @@
       </div>
       <div id="box_video"
         class="xl:basis-2/3 relative rounded-md py-8 bg-black border-4 border-gray-800 max-w-[800px] w-full animate__animated animate__fadeIn">
-        <video ref="landingVideoRef" autoplay :src="landingVideos[indexLandingVideo].src"
+        <video ref="landingVideoRef" autoplay muted :src="landingVideos[indexLandingVideo].src"
           @ended="nextLandingVideo(undefined)" @dblclick="landingVideoFullscreen" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
-          <button type="button" v-for="(v, i) in landingVideos" :key="i"
-            class="w-4 h-4 rounded-full border-4 border-gray-800" :style="'background-color:' + v.color"
+          <span v-for="(v, i) in landingVideos" :key="i"
+            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer" :style="'background-color:' + v.color"
             @click="nextLandingVideo(i)" />
         </div>
       </div>
@@ -31,7 +31,7 @@
             disableOnInteraction: false,
           }">
           <SwiperSlide v-for="(brand, i) in brands" :key="i" class="grayscale hover:grayscale-0 transition-all">
-            <NuxtImg width="100px" height="100px" :src="brand.src" />
+            <NuxtImg width="100px" height="100px" :src="brand.src" alt="Client logo" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -42,13 +42,13 @@
     <section id="notre-travail" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Notre travail</h2>
-        <UiHr />
+        <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" autoplay loop muted
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none" muted loop
             class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-end">
@@ -65,7 +65,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Métiers</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Pure player indépendant</h4>
@@ -81,15 +81,15 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" autoplay loop
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none" loop
             muted class="w-full" />
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" autoplay loop
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none" loop
             muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
@@ -107,7 +107,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Offres</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Des offres pour les annonceurs, les agences et les producteurs
@@ -126,7 +126,7 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" autoplay loop
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop
             muted class="w-full" />
         </div>
       </article>
@@ -135,13 +135,13 @@
     <section id="nos-services" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Nos services</h2>
-        <UiHr />
+        <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" autoplay loop muted
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop muted
             class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
@@ -170,7 +170,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Création</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">L'essence et la forme</h4>
@@ -198,15 +198,15 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" autoplay loop muted
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop muted
             class="w-full" />
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" autoplay loop
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none" loop
             muted class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
@@ -226,7 +226,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Technologie</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Incubateur d'inspiration</h4>
@@ -243,7 +243,7 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" autoplay loop
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none" loop
             muted class="w-full" />
         </div>
       </article>
@@ -252,13 +252,13 @@
     <section id="le-studio" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Le studio</h2>
-        <UiHr />
+        <UiSubline />
       </header>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" autoplay loop muted
+          <video src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4" preload="none" loop muted
             class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
@@ -278,7 +278,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Modèle</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Quatre pôles d'expertises complémentaires</h4>
@@ -295,14 +295,14 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="" autoplay loop muted class="w-full" />
+          <video src="" preload="none" loop muted class="w-full" />
         </div>
       </article>
 
-      <article class="px-4 py-20 w-full flex justify-evenly items-center">
+      <article class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <img src="http://www.cortexstudio.fr/assets/img/references.jpg" class="w-full object-contain" />
+          <NuxtImg src="http://www.cortexstudio.fr/assets/img/references.jpg" alt="references.jpg" class="w-full" />
         </div>
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
           <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Références</h3>
@@ -320,7 +320,7 @@
         </div>
       </article>
 
-      <article class="p-4 w-full flex justify-evenly items-center">
+      <article class="p-4 w-full flex justify-evenly gap-8 items-center">
         <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
           <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Historique</h3>
           <h4 class="text-2xl font-['ClashDisplay-Bold']">Artisan sonore et visuel depuis 2005</h4>
@@ -331,7 +331,7 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="" autoplay loop muted class="w-full" />
+          <video src="" preload="none" loop muted class="w-full" />
         </div>
       </article>
     </section>
@@ -340,7 +340,7 @@
       class="mt-[var(--var-header-height)] p-4 my-8 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="p-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Contactez-nous</h2>
-        <UiHr />
+        <UiSubline />
       </header>
       <div class="p-4 flex lg:flex-row flex-col gap-4 justify-evenly">
         <div class="basis-1/2 lg:max-w-[400px] flex flex-col">
@@ -348,7 +348,7 @@
             serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
             potentielles, n'hésitez pas à nous contacter en utilisant ce formulaire.</p>
-          <NuxtImg src="icons/paper-plane.svg" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
+          <NuxtImg src="icons/paper-plane.svg" alt="Paper plane" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
         <form @click.prevent="" class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">
