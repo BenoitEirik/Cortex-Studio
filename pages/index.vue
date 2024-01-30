@@ -139,7 +139,7 @@
         <UiSubline />
       </header>
 
-      <article id="stategy" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
+      <article id="strategy" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
           <video ref="articleVideo5Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop

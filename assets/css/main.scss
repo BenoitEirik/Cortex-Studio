@@ -34,13 +34,15 @@ html {
 }
 
 body {
-  background-color: #f6f6f9;
+  --var-color-bg: #f6f6f9;
   --var-color-1: rgba(150, 255, 160, 1);
   --var-color-2: rgba(118, 213, 255, 1);
   --var-color-3: rgba(199, 36, 221, 1);
   --var-color-4: rgba(255, 249, 168, 1);
 
   --var-header-height: 90px;
+
+  background-color: var(--var-color-bg);
 
   @function var-color($num, $opacity) {
     @return rgba(255, 255, 173, $opacity);
