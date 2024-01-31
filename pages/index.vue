@@ -304,7 +304,33 @@
         </div>
         <div
           class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video src="" preload="none" loop muted class="w-full" />
+          <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
+            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
+              <p class="absolute left-2 top-2 text-2xl underline">.link</p>
+              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(0)">
+                <p class="text-xl text-center">Design web et interactif</p>
+              </div>
+            </div>
+            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
+              <p class="absolute right-2 top-2 text-2xl underline">.prod</p>
+              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+                <p class="text-xl text-center">Production de film</p>
+              </div>
+            </div>
+            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
+              <p class="absolute left-2 bottom-2 text-2xl underline">.rec</p>
+              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+                <p class="text-xl text-center">Design sonore et traitement du son</p>
+              </div>
+            </div>
+            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
+              <p class="absolute right-2 bottom-2 text-2xl underline">.post</p>
+              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+                <p class="text-xl text-center">Post-prod vidéo & motion design</p>
+              </div>
+            </div>
+            <video ref="modelVideoRef" src="" class="absolute inset-0 hidden" />
+          </div>
         </div>
       </article>
 
@@ -355,7 +381,8 @@
             <p class="p-8 text-center text-xl">
               L'activité s'installe dans un studio du 10eme arrondissement de Paris.
               <br>
-              Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la vidéo.
+              Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la
+              vidéo.
             </p>
           </div>
         </div>
@@ -530,6 +557,22 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
     video.value?.pause()
   }
 }
+
+const modelVideoRef = ref<HTMLMediaElement>()
+
+function popUpModelVideo(index: number) {
+  if (modelVideoRef.value !== undefined) {
+    switch (index) {
+      case 0:
+        modelVideoRef.value.src = ''
+        break;
+    
+      default:
+        break;
+    }
+    modelVideoRef.value.style.display = 'block'
+  }
+}
 </script>
 
 <style lang="scss">
@@ -639,4 +682,5 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}</style>
+}
+</style>
