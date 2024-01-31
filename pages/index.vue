@@ -307,29 +307,33 @@
           <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
               <p class="absolute left-2 top-2 text-2xl underline">.link</p>
-              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(0)">
+              <div
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                @click="popUpModelVideo(1)">
                 <p class="text-xl text-center">Design web et interactif</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
               <p class="absolute right-2 top-2 text-2xl underline">.prod</p>
-              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+              <div
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(2)">
                 <p class="text-xl text-center">Production de film</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
               <p class="absolute left-2 bottom-2 text-2xl underline">.rec</p>
-              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+              <div
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(3)">
                 <p class="text-xl text-center">Design sonore et traitement du son</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
               <p class="absolute right-2 bottom-2 text-2xl underline">.post</p>
-              <div class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer">
+              <div
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(4)">
                 <p class="text-xl text-center">Post-prod vidéo & motion design</p>
               </div>
             </div>
-            <video ref="modelVideoRef" src="" class="absolute inset-0 hidden" />
           </div>
         </div>
       </article>
@@ -419,6 +423,123 @@
       </div>
     </section>
   </div>
+
+  <!-- Need to be child of a parent with viewport size page -->
+  <BackgroundVideo :display="bgVideo1" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
+    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/link.mp4">
+    <template #content>
+      <div class="p-4 flex flex-col gap-4 justify-start">
+        <h1 class="text-4xl">Initiateur d'expérience interactive</h1>
+        <p class="text-sm italic">création/editorial/developpement</p>
+        <p class="text-lg">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
+        </p>
+        <p class="text-lg">A l'affut des dernières tendances .link propose des créations et conçoit des interfaces
+          novatrices, vecteurs
+          de relations entre les publics et la marque.</p>
+        <p class="text-xl text-[var(--var-color-4)]">CS.link est la division spécialisée dans la conception de sites web
+          et d'interfaces digitales.</p>
+        <p class="text-xl"><b>Savoir-faire :</b></p>
+        <ul class="pl-8 text-xl list-disc">
+          <li>Déploiement broadcast et online</li>
+          <li>Site web corporate</li>
+          <li>Site web évènementiel</li>
+          <li>Bannières, newsletters</li>
+          <li>Marketing viral</li>
+          <li>Bornes interactives</li>
+          <li>Supports de vente</li>
+        </ul>
+      </div>
+    </template>
+  </BackgroundVideo>
+
+  <BackgroundVideo  :display="bgVideo2" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
+    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/prod.mp4">
+    <template #content>
+      <div class="p-4 flex flex-col gap-4 justify-start">
+        <h1 class="text-4xl">Initiateur d'expérience scénographique</h1>
+        <p class="text-sm italic">scénographie/captation/réalisation de films</p>
+        <p class="text-lg">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
+          technologies de pointe.</p>
+        <p class="text-lg">
+          <strong>CS.prod coordonne les talents et les outils pour procurer un discours esthétique et clair à votre
+            communication audiovisuelle.</strong>
+        </p>
+        <p class="text-xl text-[var(--var-color-1)]">CS.prod est la division spécialisée dans l'écriture et la
+          réalisation de films.</p>
+        <p class="text-xl"><b>Savoir-faire :</b></p>
+        <ul class="pl-8 text-xl list-disc">
+          <li>Élaborer des scenarii et superviser la réalisation</li>
+          <li>Organiser et planifier chaque étape de la production</li>
+          <li>Préparer et contrôler les tournages sur site ou en studio</li>
+          <li>Déployer les opérateurs les plus performants parmi les métiers du son et de l'image</li>
+          <li>Superviser la captation</li>
+          <li>Exploiter un workflow UHD pour vos productions dès la captation</li>
+          <li>Anticiper les travaux web d'intégration dès l'écriture.</li>
+        </ul>
+      </div>
+    </template>
+  </BackgroundVideo>
+
+  <BackgroundVideo :display="bgVideo3" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
+    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/rec.mp4">
+    <template #content>
+      <div class="p-4 flex flex-col gap-4 justify-start">
+        <h1 class="text-4xl">Initiateur d'expériences sonores</h1>
+        <p class="text-sm italic">sound-design/travail du son</p>
+        <p class="text-lg">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
+          son.</p>
+        <p class="text-lg">Le son a un impact déterminant sur la perception. Seul ou en soutien à l'image, le son est
+          vecteur d'émotions.</p>
+        <p class="text-lg">
+          <strong>Le langage sonore participe à l'élaboration, au ton, à l'intensité du message et fait appel à la
+            sensibilité.</strong>
+        </p>
+        <p class="text-lg">
+          <strong>CS.prod coordonne les talents et les outils pour procurer un discours esthétique et clair à votre
+            communication audiovisuelle.</strong>
+        </p>
+        <p class="text-xl text-[var(--var-color-3)]">CS.rec est la division spécialisée dans la composition, la
+          production et la réalisation sonore.</p>
+        <p class="text-xl"><b>Savoir-faire :</b></p>
+        <ul class="pl-8 text-xl list-disc">
+          <li>Supervision sonore</li>
+          <li>Sound design/création sonore/signature sonore</li>
+          <li>Composition musicale</li>
+          <li>Composition d'ambiance comportementale</li>
+          <li>Enregistrement, montage/mixage</li>
+          <li>Mastering</li>
+          <li>Post-synchronisation</li>
+        </ul>
+      </div>
+    </template>
+  </BackgroundVideo>
+
+  <BackgroundVideo :display="bgVideo4" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
+    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/post.mp4">
+    <template #content>
+      <div class="p-4 flex flex-col gap-4 justify-start">
+        <h1 class="text-4xl">Initiateur d'expériences visuelles</h1>
+        <p class="text-sm italic">visual design/vfx/post-production video</p>
+        <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.
+          <br>
+          <strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
+            (SD,HD,4K,6K).</strong>
+        </p>
+        <p class="text-xl text-[var(--var-color-2)]">CS.post est la division experte dans l'image.</p>
+        <p class="text-xl"><b>Savoir-faire :</b></p>
+        <ul class="pl-8 text-xl list-disc">
+          <li>Supervision du traitement de l'image</li>
+          <li>Graphisme 2D/3D, motion design</li>
+          <li>Montage</li>
+          <li>Effets spéciaux</li>
+          <li>Habillage filmique</li>
+          <li>Étalonnage</li>
+          <li>Conformation</li>
+          <li>Supervision des travaux de laboratoire</li>
+        </ul>
+      </div>
+    </template>
+  </BackgroundVideo>
 </main>
 </template>
 
@@ -558,21 +679,27 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
   }
 }
 
-const modelVideoRef = ref<HTMLMediaElement>()
-
 function popUpModelVideo(index: number) {
-  if (modelVideoRef.value !== undefined) {
-    switch (index) {
-      case 0:
-        modelVideoRef.value.src = ''
-        break;
-    
-      default:
-        break;
-    }
-    modelVideoRef.value.style.display = 'block'
+  switch (index) {
+    case 1:
+      bgVideo1.value = true
+      break;
+    case 2:
+      bgVideo2.value = true
+      break;
+    case 3:
+      bgVideo3.value = true
+      break;
+    case 4:
+      bgVideo4.value = true
+      break;
   }
 }
+
+const bgVideo1 = ref<boolean>(false)
+const bgVideo2 = ref<boolean>(false)
+const bgVideo3 = ref<boolean>(false)
+const bgVideo4 = ref<boolean>(false)
 </script>
 
 <style lang="scss">
