@@ -367,8 +367,8 @@
     src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/link.mp4">
     <template #content>
-      <div class="p-4 flex flex-col gap-4 justify-start">
-        <h4 class="text-4xl">Initiateur d'expérience interactive</h4>
+      <article class="p-4 flex flex-col gap-4 justify-start">
+        <h3 class="text-4xl">Initiateur d'expérience interactive</h3>
         <p class="text-sm italic">création/editorial/developpement</p>
         <p class="text-lg">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
         </p>
@@ -387,7 +387,7 @@
           <li>Bornes interactives</li>
           <li>Supports de vente</li>
         </ul>
-      </div>
+      </article>
     </template>
   </BackgroundVideo>
 
@@ -395,8 +395,8 @@
     src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/prod.mp4">
     <template #content>
-      <div class="p-4 flex flex-col gap-4 justify-start">
-        <h4 class="text-4xl">Initiateur d'expérience scénographique</h4>
+      <article class="p-4 flex flex-col gap-4 justify-start">
+        <h3 class="text-4xl">Initiateur d'expérience scénographique</h3>
         <p class="text-sm italic">scénographie/captation/réalisation de films</p>
         <p class="text-lg">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
           technologies de pointe.</p>
@@ -416,7 +416,7 @@
           <li>Exploiter un workflow UHD pour vos productions dès la captation</li>
           <li>Anticiper les travaux web d'intégration dès l'écriture.</li>
         </ul>
-      </div>
+      </article>
     </template>
   </BackgroundVideo>
 
@@ -424,8 +424,8 @@
     src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/rec.mp4">
     <template #content>
-      <div class="p-4 flex flex-col gap-4 justify-start">
-        <h4 class="text-4xl">Initiateur d'expériences sonores</h4>
+      <article class="p-4 flex flex-col gap-4 justify-start">
+        <h3 class="text-4xl">Initiateur d'expériences sonores</h3>
         <p class="text-sm italic">sound-design/travail du son</p>
         <p class="text-lg">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
           son.</p>
@@ -451,7 +451,7 @@
           <li>Mastering</li>
           <li>Post-synchronisation</li>
         </ul>
-      </div>
+      </article>
     </template>
   </BackgroundVideo>
 
@@ -459,8 +459,8 @@
     src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/post.mp4">
     <template #content>
-      <div class="p-4 flex flex-col gap-4 justify-start">
-        <h4 class="text-4xl">Initiateur d'expériences visuelles</h4>
+      <article class="p-4 flex flex-col gap-4 justify-start">
+        <h3 class="text-4xl">Initiateur d'expériences visuelles</h3>
         <p class="text-sm italic">visual design/vfx/post-production video</p>
         <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.</p>
         <p class="text-lg"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
@@ -477,7 +477,7 @@
           <li>Conformation</li>
           <li>Supervision des travaux de laboratoire</li>
         </ul>
-      </div>
+      </article>
     </template>
   </BackgroundVideo>
 </main>
