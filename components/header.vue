@@ -245,6 +245,7 @@ const globalStore = useGlobalStore()
 const { y } = useWindowScroll()
 
 const scrolling = computed(() => {
+  if (!process.client) return false
   if (y.value > window.innerHeight * 0.8) {
     return true
   } else {
