@@ -7,7 +7,7 @@
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
           <span class="font-['ClashDisplay-Bold'] text-6xl">Cortex Studio</span>
-          <div class="h-2 border-transparent" />
+          <span class="block h-2 border-transparent" />
           <span class="text-4xl">est spécialisé dans le design, le film et la production digitale.</span>
         </h1>
         <NuxtLink id="cta-btn" to="/#notre-travail">Découvrir</NuxtLink>
