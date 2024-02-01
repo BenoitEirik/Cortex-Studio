@@ -46,16 +46,10 @@
         <UiSubline />
       </header>
 
-      <article id="showreel" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo1Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" preload="none" muted
-            loop class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-end">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Showreel</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Créer des expériences digitales</h4>
+      <ContentVideo id="showreel"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
+        h4="Créer des expériences digitales">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             <strong>Creative Studio</strong> a l'expertise pour déterminer la stratégie de contenus et la réaliser,
             procéder à la captation, au traitement du visuel, du son et à sa diffusion.
@@ -64,13 +58,13 @@
             <br>
             Creative Studio est le partenaire des projets artistiques et commerciaux.
           </p>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="jobs" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Métiers</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Pure player indépendant</h4>
+      <ContentVideo id="jobs" layout="right"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
+        h4="Pure player indépendant">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Spécialisé dans la production digitale et audiovisuelle, <strong>Cortext Studio</strong> constitue
             un maillage de compétences pluri-disciplinaires
@@ -81,25 +75,13 @@
             <p class="text-lg italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre
               communication digitale. »</p>
           </blockquote>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo2Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="experimentations" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo3Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
-          <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Expérimentations</h3>
-          <h4 class="self-end text-2xl font-['ClashDisplay-Bold']">Captures insolites</h4>
+      <ContentVideo id="experimentations"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
+        h3="Expérimentations" h4="Captures insolites">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Révélations des détails invisibles d'un orage sous l'oeil d'une caméra à l'affut. Expérimenter aujourd'hui,
             c'est maitriser demain pour vos projets.
@@ -109,14 +91,13 @@
             Nous participons aux développements de la captation, du traitement sonore et visuel et des nouveaux usages
             médiatiques.
           </p>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="offers" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Offres</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Des offres pour les annonceurs, les agences et les producteurs
-          </h4>
+      <ContentVideo id="offers" layout="right"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
+        h4="Des offres pour les annonceurs, les agences et les producteurs">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             <strong>Cortex Studio</strong> maximise la qualité et la pertinence des contenus.
             <br>
@@ -128,14 +109,8 @@
             <br>
             <strong>Cortex Studio</strong> articule les compétences en parfaite confidentialité.
           </p>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo4Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" preload="none" loop muted
-            class="w-full" />
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
     </section>
 
     <section id="nos-services" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
@@ -144,16 +119,10 @@
         <UiSubline />
       </header>
 
-      <article id="strategy" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo5Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Stratégie</h3>
-          <h4 class="self-end text-2xl font-['ClashDisplay-Bold']">Correspondre à l'ère du temps</h4>
+      <ContentVideo id="strategy"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
+        h4="Correspondre à l'ère du temps">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             À chaque étape, <strong>Cortex Studio</strong> déploie des stratégies qui favorisent la pertinence des
             contenus.
@@ -174,13 +143,13 @@
               <li>stratégie de réseaux sociaux</li>
             </ul>
           </blockquote>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="creation" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Création</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">L'essence et la forme</h4>
+      <ContentVideo id="creation" layout="right"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
+        h4="L'essence et la forme">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Les contenus sont des « véhicules » qui portent le sens et l'apparence du projet diffusé.
             <br>
@@ -202,25 +171,13 @@
               <li>architecture d'Information</li>
             </ul>
           </blockquote>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo6Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="production" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo7Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
-          <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Production</h3>
-          <h4 class="self-end text-2xl font-['ClashDisplay-Bold']">De la puissance à l'acte</h4>
+      <ContentVideo id="production"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
+        h4="De la puissance à l'acte">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             <strong>Cortex Studio</strong> pilote l'ensemble des moyens de production digitale.
             <br>
@@ -232,13 +189,13 @@
           <blockquote>
             <p class="pb-4 text-lg italic">« Cortex Studio est l'outil facilitateur de production digitale. »</p>
           </blockquote>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="technology" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Technologie</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Incubateur d'inspiration</h4>
+      <ContentVideo id="technology" layout="right"
+        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
+        h4="Incubateur d'inspiration">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Un maillage technologique dans un workflow au service de la créativité.
             <br>
@@ -249,14 +206,8 @@
           <blockquote>
             <p class="pb-4 text-lg italic">« Cortex Studio fait la jonction des technologies UHD. »</p>
           </blockquote>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
-          <video ref="articleVideo8Ref"
-            src="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" preload="none" loop
-            muted class="w-full" />
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
     </section>
 
     <section id="le-studio" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
@@ -265,15 +216,9 @@
         <UiSubline />
       </header>
 
-      <article id="vision" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <video ref="articleVideo9Ref" src="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
-            preload="none" loop muted class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
-          <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Vision</h3>
-          <h4 class="self-end text-2xl font-['ClashDisplay-Bold']">Expert en contenus de marques</h4>
+      <ContentVideo id="vision" src-video="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
+        h3="Vision" h4="Expert en contenus de marques">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Pour répondre aux besoins des annonceurs et des artistes CS propose une approche qui met les contenus
             audiovisuels au centre de la démarche médiatique. CS accompagne les projets en apportant l'expertise de la
@@ -285,13 +230,11 @@
           <blockquote>
             <p class="pb-4 text-lg italic">« Cortex Studio active la communication. »</p>
           </blockquote>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="model" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Modèle</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Quatre pôles d'expertises complémentaires</h4>
+      <ContentVideo id="model" layout="right" h3="Modèle" h4="Quatre pôles d'expertises complémentaires">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Le modèle <strong>Cortex Studio</strong> place les contenus au centre du processus de communication et
             apporte une solution de production pour tout support, tout écran, tout média.
@@ -302,9 +245,8 @@
           <blockquote>
             <p class="pb-4 text-lg italic">« Cortex Studio est la synergie des talents. »</p>
           </blockquote>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
+        </template>
+        <template #rawSrc>
           <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
               <p class="absolute left-2 top-2 text-2xl underline">.link</p>
@@ -339,17 +281,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="references" class="px-4 py-20 w-full flex justify-evenly gap-8 items-center">
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_left overflow-hidden">
-          <NuxtImg src="http://www.cortexstudio.fr/assets/img/references.jpg" alt="references.jpg" class="w-full" />
-        </div>
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8">
-          <h3 class="self-end text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Références</h3>
-          <h4 class="self-end text-2xl font-['ClashDisplay-Bold']">Une expérience pointue</h4>
+      <ContentVideo id="references" src-img="http://www.cortexstudio.fr/assets/img/references.jpg"
+        alt="Image references.jpg" h3="Références" h4="Une expérience pointue">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             La diversité des prestations auprès de nos clients grands comptes dans des domaines aussi variés que le
             luxe, le divertissement, et la culture, constitue la richesse de notre expérience.
@@ -360,20 +297,17 @@
           <blockquote>
             <p class="pb-4 text-lg italic">« Cortex Studio optimise la communication des marques. »</p>
           </blockquote>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
 
-      <article id="historical" class="p-4 w-full flex justify-evenly gap-8 items-center">
-        <div class="basis-1/2 max-w-[800px] flex flex-col gap-8 items-start">
-          <h3 class="text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white">Historique</h3>
-          <h4 class="text-2xl font-['ClashDisplay-Bold']">Artisan sonore et visuel depuis 2005</h4>
+      <ContentVideo id="historical" layout="right" h3="Historique" h4="Artisan sonore et visuel depuis 2005">
+        <template #content>
           <p class="text-justify text-lg leading-8">
             Initié en 2005, le projet <strong>Cortex Studio</strong> rassemble un réseau de professionnels pour apporter
             une solution globale image et son.
           </p>
-        </div>
-        <div
-          class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded video_perspective_right overflow-hidden">
+        </template>
+        <template #rawSrc>
           <div class="w-full aspect-video bg-[var(--var-color-bg)] flex flex-col justify-center items-center">
             <div class="p-2 flex gap-4 justify-evenly items-center border-b-4 border-dashed text-lg font-bold">
               <span class="text-xs">2006</span>
@@ -393,8 +327,8 @@
               vidéo.
             </p>
           </div>
-        </div>
-      </article>
+        </template>
+      </ContentVideo>
     </section>
 
     <section id="contactez-nous"
@@ -658,33 +592,6 @@ const nextLandingVideo = (index: number | undefined) => {
 }
 const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
 
-const articleVideo1Ref = ref<HTMLMediaElement>()
-const articleVideo2Ref = ref<HTMLMediaElement>()
-const articleVideo3Ref = ref<HTMLMediaElement>()
-const articleVideo4Ref = ref<HTMLMediaElement>()
-const articleVideo5Ref = ref<HTMLMediaElement>()
-const articleVideo6Ref = ref<HTMLMediaElement>()
-const articleVideo7Ref = ref<HTMLMediaElement>()
-const articleVideo8Ref = ref<HTMLMediaElement>()
-const articleVideo9Ref = ref<HTMLMediaElement>()
-watch(useElementVisibility(articleVideo1Ref), (value) => playVideoFromRef(articleVideo1Ref, value))
-watch(useElementVisibility(articleVideo2Ref), (value) => playVideoFromRef(articleVideo2Ref, value))
-watch(useElementVisibility(articleVideo3Ref), (value) => playVideoFromRef(articleVideo3Ref, value))
-watch(useElementVisibility(articleVideo4Ref), (value) => playVideoFromRef(articleVideo4Ref, value))
-watch(useElementVisibility(articleVideo5Ref), (value) => playVideoFromRef(articleVideo5Ref, value))
-watch(useElementVisibility(articleVideo6Ref), (value) => playVideoFromRef(articleVideo6Ref, value))
-watch(useElementVisibility(articleVideo7Ref), (value) => playVideoFromRef(articleVideo7Ref, value))
-watch(useElementVisibility(articleVideo8Ref), (value) => playVideoFromRef(articleVideo8Ref, value))
-watch(useElementVisibility(articleVideo9Ref), (value) => playVideoFromRef(articleVideo9Ref, value))
-
-function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boolean) {
-  if (value) {
-    video.value?.play()
-  } else {
-    video.value?.pause()
-  }
-}
-
 function popUpModelVideo(index: number) {
   switch (index) {
     case 1:
@@ -795,28 +702,6 @@ video {
 
 #notre-travail {
   background: linear-gradient(-150deg, var-color(1, 50%), #f6f6f9 20% 100%);
-}
-
-.video_perspective_left {
-  transform: perspective(1500px) rotateY(15deg);
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition: transform 1s ease 0s;
-
-  &:hover {
-    transform: perspective(3000px) rotateY(5deg);
-  }
-}
-
-.video_perspective_right {
-  transform: perspective(1500px) rotateY(-15deg);
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition: transform 1s ease 0s;
-
-  &:hover {
-    transform: perspective(3000px) rotateY(5deg);
-  }
 }
 
 blockquote p {
