@@ -9,6 +9,9 @@
     @click="closeMainVideo">
     <video :src="srcMainVideo" preload="none" autoplay loop muted class="max-w-full" />
   </div>
+  <div class="absolute z-30 top-0 left-0" @click="$emit('close', false)">
+    <Icon name="i-iconoir-xmark" color="white" class="m-2" size="2rem" />
+  </div>
 </div>
 </template>
 
@@ -27,6 +30,10 @@ defineProps({
     default: ''
   }
 })
+
+defineEmits<{
+  close: [value: Boolean]
+}>()
 
 const mainRef = ref<HTMLElement>()
 

@@ -7,7 +7,7 @@
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
           <span class="font-['ClashDisplay-Bold'] text-6xl">Cortex Studio</span>
-          <hr class="h-2 border-transparent">
+          <div class="h-2 border-transparent" />
           <span class="text-4xl">est spécialisé dans le design, le film et la production digitale.</span>
         </h1>
         <NuxtLink id="cta-btn" to="#notre-travail">Découvrir</NuxtLink>
@@ -316,21 +316,24 @@
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
               <p class="absolute right-2 top-2 text-2xl underline">.prod</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(2)">
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                @click="popUpModelVideo(2)">
                 <p class="text-xl text-center">Production de film</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
               <p class="absolute left-2 bottom-2 text-2xl underline">.rec</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(3)">
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                @click="popUpModelVideo(3)">
                 <p class="text-xl text-center">Design sonore et traitement du son</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
               <p class="absolute right-2 bottom-2 text-2xl underline">.post</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer" @click="popUpModelVideo(4)">
+                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                @click="popUpModelVideo(4)">
                 <p class="text-xl text-center">Post-prod vidéo & motion design</p>
               </div>
             </div>
@@ -425,11 +428,11 @@
   </div>
 
   <!-- Need to be child of a parent with viewport size page -->
-  <BackgroundVideo :display="bgVideo1" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
+  <BackgroundVideo :display="bgVideo1" @close="(value) => bgVideo1 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/link.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
-        <h1 class="text-4xl">Initiateur d'expérience interactive</h1>
+        <h4 class="text-4xl">Initiateur d'expérience interactive</h4>
         <p class="text-sm italic">création/editorial/developpement</p>
         <p class="text-lg">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
         </p>
@@ -452,11 +455,11 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo  :display="bgVideo2" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
+  <BackgroundVideo :display="bgVideo2" @close="(value) => bgVideo2 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/prod.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
-        <h1 class="text-4xl">Initiateur d'expérience scénographique</h1>
+        <h4 class="text-4xl">Initiateur d'expérience scénographique</h4>
         <p class="text-sm italic">scénographie/captation/réalisation de films</p>
         <p class="text-lg">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
           technologies de pointe.</p>
@@ -480,11 +483,11 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo :display="bgVideo3" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
+  <BackgroundVideo :display="bgVideo3" @close="(value) => bgVideo3 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/rec.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
-        <h1 class="text-4xl">Initiateur d'expériences sonores</h1>
+        <h4 class="text-4xl">Initiateur d'expériences sonores</h4>
         <p class="text-sm italic">sound-design/travail du son</p>
         <p class="text-lg">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
           son.</p>
@@ -514,11 +517,11 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo :display="bgVideo4" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
+  <BackgroundVideo :display="bgVideo4" @close="(value) => bgVideo4 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/post.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
-        <h1 class="text-4xl">Initiateur d'expériences visuelles</h1>
+        <h4 class="text-4xl">Initiateur d'expériences visuelles</h4>
         <p class="text-sm italic">visual design/vfx/post-production video</p>
         <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.
           <br>
@@ -735,6 +738,12 @@ const bgVideo4 = ref<boolean>(false)
   }
 }
 
+video {
+  background-image: url('puff.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #cta-btn,
 #form-btn {
   position: relative;
@@ -809,5 +818,4 @@ const bgVideo4 = ref<boolean>(false)
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}
-</style>
+}</style>

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.scss', 'animate.css/animate.min.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt', 'nuxt-icon'],
   app: {
     head: {
       htmlAttrs: {
@@ -31,5 +31,12 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     configPath: '~/tailwind.config.ts'
+  },
+  htmlValidator: {
+    options: {
+      rules: {
+        'no-autoplay': 'off'
+      }
+    }
   }
 })
