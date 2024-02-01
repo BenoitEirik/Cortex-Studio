@@ -15,7 +15,7 @@
 
     <ul class="px-4 py-2 flex justify-end gap-8 self-stretch text-white">
       <li class="flex flex-col gap-4">
-        <NuxtLink to="#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Plus</NuxtLink>
+        <NuxtLink to="/#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Plus</NuxtLink>
         <ul>
           <li>
             <NuxtLink to="/architecture">Architecture</NuxtLink>
@@ -26,53 +26,53 @@
 
     <ul class="px-4 py-2 flex justify-end gap-8 text-white">
       <li class="flex flex-col gap-4">
-        <NuxtLink to="#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Notre travail</NuxtLink>
+        <NuxtLink to="/#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Notre travail</NuxtLink>
         <ul>
           <li>
-            <NuxtLink to="#showreel">Showreel</NuxtLink>
+            <NuxtLink to="/#showreel">Showreel</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#jobs">Métiers</NuxtLink>
+            <NuxtLink to="/#jobs">Métiers</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#experimentations">Expérimentations</NuxtLink>
+            <NuxtLink to="/#experimentations">Expérimentations</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#offers">Offres</NuxtLink>
+            <NuxtLink to="/#offers">Offres</NuxtLink>
           </li>
         </ul>
       </li>
       <li class="flex flex-col gap-4">
-        <NuxtLink to="#nos-services" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Nos services</NuxtLink>
+        <NuxtLink to="/#nos-services" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Nos services</NuxtLink>
         <ul>
           <li>
-            <NuxtLink to="#strategy">Stratégie</NuxtLink>
+            <NuxtLink to="/#strategy">Stratégie</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#creation">Création</NuxtLink>
+            <NuxtLink to="/#creation">Création</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#production">Production</NuxtLink>
+            <NuxtLink to="/#production">Production</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#technology">Technologie</NuxtLink>
+            <NuxtLink to="/#technology">Technologie</NuxtLink>
           </li>
         </ul>
       </li>
       <li class="flex flex-col gap-4">
-        <NuxtLink to="#le-studio" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Le studio</NuxtLink>
+        <NuxtLink to="/#le-studio" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Le studio</NuxtLink>
         <ul>
           <li>
-            <NuxtLink to="#vision">Vision</NuxtLink>
+            <NuxtLink to="/#vision">Vision</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#model">Modèle</NuxtLink>
+            <NuxtLink to="/#model">Modèle</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#references">Références</NuxtLink>
+            <NuxtLink to="/#references">Références</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#historical">Historique</NuxtLink>
+            <NuxtLink to="/#historical">Historique</NuxtLink>
           </li>
         </ul>
       </li>
