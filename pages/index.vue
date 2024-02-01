@@ -649,7 +649,7 @@ const bgVideo4 = ref<boolean>(false)
 }
 
 video {
-  background-image: url('puff.svg');
+  background-image: url('/puff.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
