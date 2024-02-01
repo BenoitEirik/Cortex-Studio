@@ -1,7 +1,7 @@
 <template>
 <main>
   <div class="w-screen xl:h-screen flex flex-col items-center bg-gray-900">
-    <section id="section_1"
+    <section id="section_landing"
       class="pt-[var(--var-header-height)] relative grow w-screen p-4 flex xl:flex-row flex-col justify-evenly items-center gap-4 text-white">
       <div
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
@@ -18,7 +18,7 @@
           @ended="nextLandingVideo(undefined)" @dblclick="landingVideoFullscreen" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
-            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer" :style="'background-color:' + v.color"
+            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1" :class="{ 'outline': i === indexLandingVideo }" :style="'background-color:' + v.color + ';outline-color:' + v.color" 
             @click="nextLandingVideo(i)" />
         </div>
       </div>
@@ -428,7 +428,8 @@
   </div>
 
   <!-- Need to be child of a parent with viewport size page -->
-  <BackgroundVideo :display="bgVideo1" @close="(value) => bgVideo1 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
+  <BackgroundVideo :display="bgVideo1" @close="(value) => bgVideo1 = Boolean(value)"
+    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/link.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
@@ -455,7 +456,8 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo :display="bgVideo2" @close="(value) => bgVideo2 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
+  <BackgroundVideo :display="bgVideo2" @close="(value) => bgVideo2 = Boolean(value)"
+    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/prod.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
@@ -483,7 +485,8 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo :display="bgVideo3" @close="(value) => bgVideo3 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
+  <BackgroundVideo :display="bgVideo3" @close="(value) => bgVideo3 = Boolean(value)"
+    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/rec.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
@@ -517,17 +520,16 @@
     </template>
   </BackgroundVideo>
 
-  <BackgroundVideo :display="bgVideo4" @close="(value) => bgVideo4 = Boolean(value)" src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
+  <BackgroundVideo :display="bgVideo4" @close="(value) => bgVideo4 = Boolean(value)"
+    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/post.mp4">
     <template #content>
       <div class="p-4 flex flex-col gap-4 justify-start">
         <h4 class="text-4xl">Initiateur d'expériences visuelles</h4>
         <p class="text-sm italic">visual design/vfx/post-production video</p>
-        <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.
-          <br>
-          <strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
-            (SD,HD,4K,6K).</strong>
-        </p>
+        <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.</p>
+        <p class="text-lg"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
+            (SD,HD,4K,6K).</strong></p>
         <p class="text-xl text-[var(--var-color-2)]">CS.post est la division experte dans l'image.</p>
         <p class="text-xl"><b>Savoir-faire :</b></p>
         <ul class="pl-8 text-xl list-disc">
@@ -778,15 +780,15 @@ video {
   }
 }
 
-#section_1 {
+#section_landing {
   background: linear-gradient(45deg, rgba(150, 255, 160, 0.7), rgba(118, 213, 255, 0.7), rgba(199, 36, 221, 0.7), rgba(255, 255, 173, 0.7));
 
   h1 {
-    filter: drop-shadow(0 0 1px black);
+    filter: drop-shadow(0 0 1px #1f2937);
   }
 
   #box_video {
-    box-shadow: 0 0 20px black, 20px 15px 30px rgba(150, 255, 160, 0.4), -20px 15px 30px rgba(118, 213, 255, 0.4), -20px -15px 30px rgba(199, 36, 221, 0.4), 20px -15px 30px rgba(255, 255, 173, 0.4);
+    box-shadow: 0 0 20px #1f2937;
   }
 }
 

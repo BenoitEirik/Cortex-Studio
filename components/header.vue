@@ -2,7 +2,7 @@
 <header class="sticky top-0 h-0 z-10 w-screen flex justify-center">
   <nav ref="headerRef"
     class="absolute xl:top-2 top-0 max-w-7xl w-full max-h-[var(--var-header-height)] px-6 py-4 flex justify-between items-center xl:rounded-3xl rounded-b-3xl"
-    :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }">
+    :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }">
     <NuxtLink to="/">
       <NuxtImg id="logo" width="200px" src="logo.png" alt="Cortex Studio logo" />
     </NuxtLink>

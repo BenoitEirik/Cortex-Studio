@@ -27,6 +27,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+::selection {
+  color: var(--var-color-bg);
+  background: rgba(199, 36, 221, 1);
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
