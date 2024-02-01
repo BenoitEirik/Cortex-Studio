@@ -1,5 +1,5 @@
 <template>
-<main>
+<main class="bg-[var(--var-color-bg)]">
   <div class="w-screen xl:h-screen flex flex-col items-center bg-gray-900">
     <section id="section_landing"
       class="pt-[var(--var-header-height)] relative grow w-screen p-4 flex xl:flex-row flex-col justify-evenly items-center gap-4 text-white">
@@ -10,7 +10,7 @@
           <div class="h-2 border-transparent" />
           <span class="text-4xl">est spécialisé dans le design, le film et la production digitale.</span>
         </h1>
-        <NuxtLink id="cta-btn" to="#notre-travail">Découvrir</NuxtLink>
+        <NuxtLink id="cta-btn" to="/#notre-travail">Découvrir</NuxtLink>
       </div>
       <div id="box_video"
         class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn">
@@ -18,8 +18,9 @@
           @ended="nextLandingVideo(undefined)" @dblclick="landingVideoFullscreen" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
-            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1" :class="{ 'outline': i === indexLandingVideo }" :style="'background-color:' + v.color + ';outline-color:' + v.color" 
-            @click="nextLandingVideo(i)" />
+            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1"
+            :class="{ 'outline': i === indexLandingVideo }"
+            :style="'background-color:' + v.color + ';outline-color:' + v.color" @click="nextLandingVideo(i)" />
         </div>
       </div>
     </section>
@@ -788,7 +789,7 @@ video {
   }
 
   #box_video {
-    box-shadow: 0 0 20px #1f2937;
+    box-shadow: 0 0 20px theme('colors.gray.900');
   }
 }
 
@@ -820,4 +821,5 @@ video {
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}</style>
+}
+</style>

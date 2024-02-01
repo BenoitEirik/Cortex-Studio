@@ -8,23 +8,23 @@
     </NuxtLink>
     <ul class="px-4 py-2 flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold']">
       <li @pointerover="popUpFromLink(0)" @click="closeFromClick()">
-        <NuxtLink to="#notre-travail" class="font-bold">Notre travail</NuxtLink>
+        <NuxtLink to="/#notre-travail" class="font-bold">Notre travail</NuxtLink>
       </li>
       <li @pointerover="popUpFromLink(1)" @click="closeFromClick()">
-        <NuxtLink to="#nos-services" class="font-bold">Nos services</NuxtLink>
+        <NuxtLink to="/#nos-services" class="font-bold">Nos services</NuxtLink>
       </li>
       <li @pointerover="popUpFromLink(2)" @click="closeFromClick()">
-        <NuxtLink to="#le-studio" class="font-bold">Le studio</NuxtLink>
+        <NuxtLink to="/#le-studio" class="font-bold">Le studio</NuxtLink>
       </li>
       <li @pointerover="popUpFromLink(3)" @click="closeFromClick()">
-        <NuxtLink to="#contactez-nous" class="font-bold">Contactez-nous</NuxtLink>
+        <NuxtLink to="/#contactez-nous" class="font-bold">Contactez-nous</NuxtLink>
       </li>
     </ul>
   </nav>
 
   <div ref="subMenu1Ref" @pointerleave="closeFromBox(0)" class="hidden absolute top-[var(--var-header-height)] p-4">
     <div class="p-8 bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="#showreel" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#showreel" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Showreel</h3>
           <ul class="pl-4 list-disc">
@@ -40,7 +40,7 @@
         </div>
       </a>
 
-      <a href="#jobs" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#jobs" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Métiers</h3>
           <ul class="pl-4 list-disc">
@@ -57,7 +57,7 @@
         </div>
       </a>
 
-      <a href="#experimentations" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#experimentations" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Expérimentations</h3>
           <ul class="pl-4 list-disc">
@@ -73,7 +73,7 @@
         </div>
       </a>
 
-      <a href="#offers" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#offers" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Offres</h3>
           <ul class="pl-4 list-disc">
@@ -94,7 +94,7 @@
   <div ref="subMenu2Ref" @pointerleave="closeFromBox(1)"
     class="hidden absolute top-[var(--var-header-height)] p-4">
     <div class="p-8 bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="#strategy" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#strategy" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Stratégie</h3>
           <ul class="pl-4 list-disc">
@@ -112,7 +112,7 @@
         </div>
       </a>
 
-      <a href="#creation" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#creation" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Création</h3>
           <ul class="pl-4 list-disc">
@@ -129,7 +129,7 @@
         </div>
       </a>
 
-      <a href="#production" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#production" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Production</h3>
           <ul class="pl-4 list-disc">
@@ -146,7 +146,7 @@
         </div>
       </a>
 
-      <a href="#technology" class="flex gap-8" @click="closeFromClick()">
+      <a href="/#technology" class="flex gap-8" @click="closeFromClick()">
         <header class="basis-2/3 ">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Technologie</h3>
           <ul class="pl-4 list-disc">
@@ -167,7 +167,7 @@
 
   <div ref="subMenu3Ref" @pointerleave="closeFromBox(2)" class="hidden absolute top-[var(--var-header-height)] p-4">
     <div class="p-8 max-w-[600px] bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="#vision" class="flex justify-evenly gap-8" @click="closeFromClick()">
+      <a href="/#vision" class="flex justify-evenly gap-8" @click="closeFromClick()">
         <header class="basis-1/2">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Vision</h3>
           <p>
@@ -182,7 +182,7 @@
         </div>
       </a>
 
-      <a href="#model" class="flex gap-8 justify-evenly" @click="closeFromClick()">
+      <a href="/#model" class="flex gap-8 justify-evenly" @click="closeFromClick()">
         <header class="basis-1/2">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Modèle</h3>
           <ul class="pl-4 list-disc">
@@ -199,7 +199,7 @@
         </div>
       </a>
 
-      <a href="#references" class="flex gap-8 justify-evenly" @click="closeFromClick()">
+      <a href="/#references" class="flex gap-8 justify-evenly" @click="closeFromClick()">
         <header class="basis-1/2">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Références</h3>
           <ul class="pl-4 list-disc">
@@ -216,7 +216,7 @@
         </div>
       </a>
 
-      <a href="#historical" class="flex gap-8 justify-evenly" @click="closeFromClick()">
+      <a href="/#historical" class="flex gap-8 justify-evenly" @click="closeFromClick()">
         <header class="basis-1/2">
           <h3 class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Historique</h3>
           <ul class="pl-4 list-disc">
