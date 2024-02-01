@@ -1,11 +1,11 @@
 <template>
 <footer class="w-screen flex justify-center bg-gray-900">
-  <div class="max-w-7xl w-full p-8 flex gap-8 justify-between items-center">
-    <div class="px-4 py-2 flex flex-col gap-4 justify-between self-stretch">
+  <div class="max-w-7xl w-full p-8 flex lg:flex-row flex-col gap-8 justify-between items-center">
+    <div class="self-stretch px-4 py-2 flex lg:flex-col md:flex-row flex-col gap-4 justify-between md:items-start items-center">
       <NuxtLink to="/">
         <NuxtImg id="logo" width="200px" src="logo.png" alt="Cortex Studio logo" />
       </NuxtLink>
-      <div class="text-white text-xs">
+      <div class="text-white text-xs lg:text-left md:text-right text-center">
         <p>© Cortex Studio {{ new Date().getFullYear() }}</p>
         <p>Registred tradmark, All rights reserved.</p>
         <br>
@@ -13,9 +13,9 @@
       </div>
     </div>
 
-    <ul class="px-4 py-2 flex justify-end gap-8 self-stretch text-white">
+    <ul class="self-stretch px-4 py-2 flex justify-center gap-8 text-white lg:text-left text-center">
       <li class="flex flex-col gap-4">
-        <NuxtLink to="/#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Plus</NuxtLink>
+        <NuxtLink to="/#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Plus+</NuxtLink>
         <ul>
           <li>
             <NuxtLink to="/architecture">Architecture</NuxtLink>
@@ -24,7 +24,7 @@
       </li>
     </ul>
 
-    <ul class="px-4 py-2 flex justify-end gap-8 text-white">
+    <ul class="px-4 py-2 flex justify-center flex-wrap gap-8 text-white lg:text-left text-center">
       <li class="flex flex-col gap-4">
         <NuxtLink to="/#notre-travail" class="font-['ClashDisplay-Bold'] text-2xl font-bold">Notre travail</NuxtLink>
         <ul>

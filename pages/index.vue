@@ -332,7 +332,7 @@
     </section>
 
     <section id="contactez-nous"
-      class="pt-[var(--var-header-height)] mb-8 px-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
+      class="pt-[var(--var-header-height)] xl:mb-8 mb-0 px-4 pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="px-8 pb-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Contactez-nous</h2>
         <UiSubline />
