@@ -40,7 +40,7 @@
   </div>
 
   <div class="max-w-full w-screen flex flex-col items-center">
-    <section id="notre-travail" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
+    <section id="notre-travail" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Notre travail</h2>
         <UiSubline />
@@ -114,7 +114,7 @@
       </ContentVideo>
     </section>
 
-    <section id="nos-services" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
+    <section id="nos-services" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Nos services</h2>
         <UiSubline />
@@ -212,7 +212,7 @@
       </ContentVideo>
     </section>
 
-    <section id="le-studio" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
+    <section id="le-studio" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Le studio</h2>
         <UiSubline />
@@ -344,7 +344,7 @@
     </section>
 
     <section id="contactez-nous"
-      class="pt-[var(--var-header-height)] xl:mb-8 mb-0 px-4 pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
+      class="pt-[var(--var-header-height)] xl:mb-8 mb-0 sm:px-4 sm:pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="px-8 pb-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Contactez-nous</h2>
         <UiSubline />
