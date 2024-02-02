@@ -17,6 +17,11 @@
     <li>
       <NuxtLink to="/#contactez-nous" class="font-bold" @click="toggle('')">Contactez-nous</NuxtLink>
     </li>
+    <li>
+      <div class="cursor-pointer" title="Accès partenaire" @click="toggle('')">
+        <Icon name="i-iconoir-log-in" size="2rem" />
+      </div>
+    </li>
   </ul>
 
   <!-- #notre-travail -->

@@ -9,8 +9,8 @@
     @click="closeMainVideo">
     <video :src="srcMainVideo" preload="none" autoplay loop muted class="max-w-full" />
   </div>
-  <div class="absolute z-30 top-0 left-0" @click="$emit('close', false)">
-    <Icon name="i-iconoir-xmark" color="white" class="m-2" size="2rem" />
+  <div class="absolute z-30 top-0 left-0" title="Fermer" @click="$emit('close', false)">
+    <Icon name="i-iconoir-xmark" color="white" class="close_icon m-2" size="2rem" />
   </div>
 </div>
 </template>
@@ -49,3 +49,9 @@ function closeMainVideo() {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.close_icon {
+  filter: drop-shadow(0 0 1px black);
+}
+</style>
