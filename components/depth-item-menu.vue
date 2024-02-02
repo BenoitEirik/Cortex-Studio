@@ -6,8 +6,8 @@
       <slot name="content" />
     </div>
     <div class="md:basis-1/3 shrink-0 flex md:justify-end justify-center items-start overflow-hidden">
-      <video :src="srcVideo" width="200px" autoplay loop
-        muted class="border-4 border-gray-800 rounded-xl"></video>
+      <video :src="srcVideo" width="200px" preload="none" autoplay loop
+        muted class="bg-gray-900 border-4 border-gray-800 rounded-xl"></video>
     </div>
   </a>
 </li>

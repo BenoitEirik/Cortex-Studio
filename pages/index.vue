@@ -32,7 +32,7 @@
             disableOnInteraction: false,
           }">
           <SwiperSlide v-for="(brand, i) in brands" :key="i" class="grayscale hover:grayscale-0 transition-all">
-            <img width="100px" height="100px" :src="'/images/'+brand.src" alt="Client logo" />
+            <img width="100px" height="100px" :src="'/images/' + brand.src" alt="Client logo" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -72,7 +72,8 @@
             les plus qualitatifs et exigeants.
           </p>
           <blockquote>
-            <p class="lg:text-lg text-md italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre
+            <p class="lg:text-lg text-md italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie
+              votre
               communication digitale. »</p>
           </blockquote>
         </template>
@@ -187,7 +188,8 @@
             améliore les procédés.
           </p>
           <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est l'outil facilitateur de production digitale. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est l'outil facilitateur de production digitale. »
+            </p>
           </blockquote>
         </template>
       </ContentVideo>
@@ -280,6 +282,16 @@
                 <p class="lg:text-xl md:text-lg text-md text-center">Post-prod vidéo & motion design</p>
               </div>
             </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  flex justify-center items-center bg-white border border-black rounded-full overflow-hidden"
+              @click="popUpModelVideo(5)">
+              <p class="px-4 py-2 text-center text-md font-bold underline">.content</p>
+              <div
+                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-white transition cursor-pointer"
+                @click="popUpModelVideo(4)">
+                <p class="text-md text-center">Services</p>
+              </div>
+            </div>
           </div>
         </template>
       </ContentVideo>
@@ -339,11 +351,13 @@
       </header>
       <div class="p-4 flex lg:flex-row flex-col gap-4 justify-evenly">
         <div class="basis-1/2 lg:max-w-[400px] flex flex-col">
-          <p class="shrink-0 lg:text-lg text-md text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt et nous
+          <p class="shrink-0 lg:text-lg text-md text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt
+            et nous
             serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
             potentielles, n'hésitez pas à nous contacter en utilisant ce formulaire.</p>
-          <img src="/images/icons/paper-plane.svg" alt="Paper plane" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
+          <img src="/images/icons/paper-plane.svg" alt="Paper plane"
+            class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
         <form @click.prevent="" class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">
@@ -370,9 +384,11 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience interactive</h3>
         <p class="text-sm italic">création/editorial/developpement</p>
-        <p class="lg:text-lg text-md">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
+        <p class="lg:text-lg text-md">Instaurer des univers immersifs par des langages forts et de nouveaux concepts
+          interactifs.
         </p>
-        <p class="lg:text-lg text-md">A l'affut des dernières tendances .link propose des créations et conçoit des interfaces
+        <p class="lg:text-lg text-md">A l'affut des dernières tendances .link propose des créations et conçoit des
+          interfaces
           novatrices, vecteurs
           de relations entre les publics et la marque.</p>
         <p class="text-xl text-[var(--var-color-4)]">CS.link est la division spécialisée dans la conception de sites web
@@ -398,7 +414,8 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience scénographique</h3>
         <p class="text-sm italic">scénographie/captation/réalisation de films</p>
-        <p class="lg:text-lg text-md">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
+        <p class="lg:text-lg text-md">Mettre en scène vos projets de communication par des narrations pertinentes et
+          l'emploi de
           technologies de pointe.</p>
         <p class="lg:text-lg text-md">
           <strong>CS.prod coordonne les talents et les outils pour procurer un discours esthétique et clair à votre
@@ -427,9 +444,11 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expériences sonores</h3>
         <p class="text-sm italic">sound-design/travail du son</p>
-        <p class="lg:text-lg text-md">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
+        <p class="lg:text-lg text-md">Orchestrer des univers sonores à travers la recherche, la composition et le
+          traitement du
           son.</p>
-        <p class="lg:text-lg text-md">Le son a un impact déterminant sur la perception. Seul ou en soutien à l'image, le son est
+        <p class="lg:text-lg text-md">Le son a un impact déterminant sur la perception. Seul ou en soutien à l'image, le
+          son est
           vecteur d'émotions.</p>
         <p class="lg:text-lg text-md">
           <strong>Le langage sonore participe à l'élaboration, au ton, à l'intensité du message et fait appel à la
@@ -463,7 +482,8 @@
         <h3 class="text-4xl">Initiateur d'expériences visuelles</h3>
         <p class="text-sm italic">visual design/vfx/post-production video</p>
         <p class="lg:text-lg text-md">Concevoir le traitement de l'image en cohérence avec le projet de création.</p>
-        <p class="lg:text-lg text-md"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
+        <p class="lg:text-lg text-md"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les
+            formats
             (SD,HD,4K,6K).</strong></p>
         <p class="text-xl text-[var(--var-color-2)]">CS.post est la division experte dans l'image.</p>
         <p class="text-xl"><b>Savoir-faire :</b></p>
@@ -476,6 +496,34 @@
           <li>Étalonnage</li>
           <li>Conformation</li>
           <li>Supervision des travaux de laboratoire</li>
+        </ul>
+      </article>
+    </template>
+  </BackgroundVideo>
+
+  <BackgroundVideo :display="bgVideo5" @close="(value) => bgVideo5 = Boolean(value)"
+    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/content.mp4"
+    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/content.mp4">
+    <template #content>
+      <article class="p-4 flex flex-col gap-4 justify-start text-black">
+        <h3 class="text-4xl">Initiateur d'expérience digitale</h3>
+        <p class="text-sm italic">stratégie média /conseil / pilotage / déclinaison média</p>
+        <p class="lg:text-lg text-md">Faire converger les compétences autour d'une équipe dédiée pour concevoir une
+          stratégie de marque pertinente.</p>
+        <p class="lg:text-lg text-md"><strong>Dès les premières étapes de réflexion, CS.content crée la synergie des
+            cultures digitales pour concevoir des projets de communications ciblés.</strong></p>
+        <p class="text-xl text-[var(--var-color-2)]">CS.content est une équipe spécialisée dans le conseil, la création
+          et le pilotage de projets de communications cross-medias.</p>
+        <p class="text-xl"><b>Son rôle :</b></p>
+        <ul class="pl-8 text-xl list-disc">
+          <li><strong>cibler les besoins de communications par le contenu</strong></li>
+          <li><strong>orienter et concevoir une communication cohérente</strong></li>
+          <li><strong>réunir les compétences</strong></li>
+          <li><strong>sécuriser et encadrer la production depuis la phase de conception</strong></li>
+          <li><strong>décliner la réalisation sur tous supports</strong></li>
+          <li><strong>encadrer la tenue du planning et des coûts</strong></li>
+          <li><strong>contrôler la qualité</strong></li>
+          <li><strong>obtenir les audiences et les résultats</strong></li>
         </ul>
       </article>
     </template>
@@ -606,6 +654,9 @@ function popUpModelVideo(index: number) {
     case 4:
       bgVideo4.value = true
       break;
+    case 5:
+      bgVideo5.value = true
+      break;
   }
 }
 
@@ -613,6 +664,7 @@ const bgVideo1 = ref<boolean>(false)
 const bgVideo2 = ref<boolean>(false)
 const bgVideo3 = ref<boolean>(false)
 const bgVideo4 = ref<boolean>(false)
+const bgVideo5 = ref<boolean>(false)
 </script>
 
 <style lang="scss">

@@ -8,7 +8,7 @@
     </section>
 
     <section class="p-4 max-w-6xl w-full flex flex-col gap-8 items-center">
-      <video src="http://www.cortexstudio.fr/assets/video/bande_demo.mp4" controls autoplay loop muted class="max-w-full"></video>
+      <video src="http://www.cortexstudio.fr/assets/video/bande_demo.mp4" preload="none" controls autoplay loop muted class="max-w-full"></video>
     </section>
   </div>
 </main>
