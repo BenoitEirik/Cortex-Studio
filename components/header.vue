@@ -6,233 +6,26 @@
     <NuxtLink to="/">
       <NuxtImg id="logo_header" width="200px" src="logo.png" alt="Cortex Studio logo" />
     </NuxtLink>
-    <ul class="px-4 py-2 flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold']">
-      <li @pointerover="popUpFromLink(0)" @click="closeFromClick()">
+    <ul class="px-4 py-2 hidden lg:flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold']">
+      <li @pointerover="launchMenu('#notre-travail')">
         <NuxtLink to="/#notre-travail" class="font-bold">Notre travail</NuxtLink>
       </li>
-      <li @pointerover="popUpFromLink(1)" @click="closeFromClick()">
+      <li @pointerover="launchMenu('#nos-services')">
         <NuxtLink to="/#nos-services" class="font-bold">Nos services</NuxtLink>
       </li>
-      <li @pointerover="popUpFromLink(2)" @click="closeFromClick()">
+      <li @pointerover="launchMenu('#le-studio')">
         <NuxtLink to="/#le-studio" class="font-bold">Le studio</NuxtLink>
       </li>
-      <li @pointerover="popUpFromLink(3)" @click="closeFromClick()">
+      <li>
         <NuxtLink to="/#contactez-nous" class="font-bold">Contactez-nous</NuxtLink>
       </li>
     </ul>
+    <div class="px-4 py-2 lg:hidden flex justify-center items-center bg-[var(--var-color-bg)] border-2 border-gray-800 rounded-3xl cursor-pointer" @click="launchMenu('#')">
+      <Icon name="i-iconoir-menu" size="1.5rem" />
+    </div>
   </nav>
 
-  <div ref="subMenu1Ref" @pointerleave="closeFromBox(0)" class="hidden absolute top-[var(--var-header-height)] p-4">
-    <div class="p-8 bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="/#showreel" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Showreel</span>
-          <ul class="pl-4 list-disc">
-            <li>Capturer</li>
-            <li>Améliorer</li>
-            <li>Mélanger</li>
-            <li>Connecter</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/showreel.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#jobs" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Métiers</span>
-          <ul class="pl-4 list-disc">
-            <li>Spécialiste du contenu</li>
-            <li>Producteur de films</li>
-            <li>Révélateur visuel</li>
-            <li>Orchestrateur sonore</li>
-            <li>Diffuseur médias</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/metiers.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#experimentations" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Expérimentations</span>
-          <ul class="pl-4 list-disc">
-            <li>Captation insolite</li>
-            <li>Révélation optique</li>
-            <li>SFX/VFX</li>
-            <li>Maquettes de contenus</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/references.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#offers" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Offres</span>
-          <ul class="pl-4 list-disc">
-            <li>Conseil &amp; accompagnement</li>
-            <li>Prise en charge exécutive</li>
-            <li>Communication par les contenus</li>
-            <li><strong>Cortex Studio</strong> : atout pour les marques</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/offers.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div ref="subMenu2Ref" @pointerleave="closeFromBox(1)" class="hidden absolute top-[var(--var-header-height)] p-4">
-    <div class="p-8 bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="/#strategy" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Stratégie</span>
-          <ul class="pl-4 list-disc">
-            <li>Analyse de compétitivité</li>
-            <li>Développement personnalisé</li>
-            <li>Analyse web</li>
-            <li>Référencement</li>
-            <li>Planification de projet</li>
-            <li>Stratégie de réseaux sociaux</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/strategie.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#creation" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Création</span>
-          <ul class="pl-4 list-disc">
-            <li>Stage design</li>
-            <li>Graphic design</li>
-            <li>Motion design</li>
-            <li>Sound design</li>
-            <li>Interaction design</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/design.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#production" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Production</span>
-          <ul class="pl-4 list-disc">
-            <li>solution complète</li>
-            <li>déploiement scènique</li>
-            <li>mise en scène</li>
-            <li>captation image et son</li>
-            <li>matérialiser les idées</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/prod.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#technology" class="flex gap-8" @click="closeFromClick()">
-        <div class="basis-2/3 ">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Technologie</span>
-          <ul class="pl-4 list-disc">
-            <li>UHD workflow</li>
-            <li>génération de signal</li>
-            <li>traitement des sources</li>
-            <li>conformations aux supports </li>
-            <li>diffusion cross-media</li>
-          </ul>
-        </div>
-        <div class="basis-1/3 shrink-0">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/techno.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div ref="subMenu3Ref" @pointerleave="closeFromBox(2)" class="hidden absolute top-[var(--var-header-height)] p-4">
-    <div class="p-8 max-w-[600px] bg-[var(--var-color-bg)] rounded-3xl flex flex-col gap-8 border-2 border-gray-800">
-      <a href="/#vision" class="flex justify-evenly gap-8" @click="closeFromClick()">
-        <div class="basis-1/2">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Vision</span>
-          <p>
-            Approche par les contenus
-            l'expertise de la production
-            au service de la creation
-          </p>
-        </div>
-        <div class="basis-1/2">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/vision.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#model" class="flex gap-8 justify-evenly" @click="closeFromClick()">
-        <div class="basis-1/2">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Modèle</span>
-          <ul class="pl-4 list-disc">
-            <li>.prod</li>
-            <li>.post</li>
-            <li>.rec</li>
-            <li>.link</li>
-            <li>.content</li>
-          </ul>
-        </div>
-        <div class="basis-1/2">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/model.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#references" class="flex gap-8 justify-evenly" @click="closeFromClick()">
-        <div class="basis-1/2">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Références</span>
-          <ul class="pl-4 list-disc">
-            <li>Luxe</li>
-            <li>Grands comptes</li>
-            <li>Corporate</li>
-            <li>Institutionnel</li>
-            <li>Artistique</li>
-          </ul>
-        </div>
-        <div class="basis-1/2">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/references.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-
-      <a href="/#historical" class="flex gap-8 justify-evenly" @click="closeFromClick()">
-        <div class="basis-1/2">
-          <span class="text-gray-900 text-2xl font-['ClashDisplay-Bold']">Historique</span>
-          <ul class="pl-4 list-disc">
-            <li>Naissance</li>
-            <li>Mise en place</li>
-            <li>Structuration</li>
-            <li>Fonction du réseau</li>
-            <li>Déploiement des talents</li>
-          </ul>
-        </div>
-        <div class="basis-1/2">
-          <video src="http://www.cortexstudio.fr/assets/video/stickers/origin.mp4" width="200px" autoplay loop
-            muted></video>
-        </div>
-      </a>
-    </div>
-  </div>
+  <NavMenu ref="navMenuRef" />
 </header>
 </template>
 
@@ -251,6 +44,15 @@ const scrolling = computed(() => {
     return false
   }
 })
+
+// Menu
+const navMenuRef = ref(null)
+
+function launchMenu(depthIndex: string) {
+  if (navMenuRef.value === null) return
+
+  navMenuRef.value.toggle(depthIndex)
+}
 
 const subMenu1Ref = ref<HTMLElement>()
 const subMenu2Ref = ref<HTMLElement>()
