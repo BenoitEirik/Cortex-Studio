@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    dir: 'public/images'
+    dir: '~/public/images'
   },
   tailwindcss: {
     configPath: '~/tailwind.config.ts'
