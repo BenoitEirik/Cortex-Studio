@@ -6,9 +6,9 @@
       <div
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
-          <span class="font-['ClashDisplay-Bold'] text-6xl">Cortex Studio</span>
+          <span class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Cortex Studio</span>
           <span class="block h-2 border-transparent" />
-          <span class="text-4xl">est spécialisé dans le design, le film et la production digitale.</span>
+          <span class="lg:text-4xl text-3xl">est spécialisé dans le design, le film et la production digitale.</span>
         </h1>
         <NuxtLink id="cta-btn" to="/#notre-travail">Découvrir</NuxtLink>
       </div>
@@ -42,7 +42,7 @@
   <div class="max-w-full w-screen flex flex-col items-center">
     <section id="notre-travail" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] text-6xl">Notre travail</h2>
+        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Notre travail</h2>
         <UiSubline />
       </header>
 
@@ -50,7 +50,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
         h4="Créer des expériences digitales">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             <strong>Creative Studio</strong> a l'expertise pour déterminer la stratégie de contenus et la réaliser,
             procéder à la captation, au traitement du visuel, du son et à sa diffusion.
             <br>
@@ -65,14 +65,14 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
         h4="Pure player indépendant">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Spécialisé dans la production digitale et audiovisuelle, <strong>Cortext Studio</strong> constitue
             un maillage de compétences pluri-disciplinaires
             qui rend possible les projets
             les plus qualitatifs et exigeants.
           </p>
           <blockquote>
-            <p class="text-lg italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre
+            <p class="lg:text-lg text-md italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie votre
               communication digitale. »</p>
           </blockquote>
         </template>
@@ -82,7 +82,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
         h3="Expérimentations" h4="Captures insolites">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Révélations des détails invisibles d'un orage sous l'oeil d'une caméra à l'affut. Expérimenter aujourd'hui,
             c'est maitriser demain pour vos projets.
             <br>
@@ -98,7 +98,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
         h4="Des offres pour les annonceurs, les agences et les producteurs">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             <strong>Cortex Studio</strong> maximise la qualité et la pertinence des contenus.
             <br>
             <strong>Cortex Studio</strong> propose des offres adaptées pour intégrer des équipes déjà opérantes, ou en
@@ -115,7 +115,7 @@
 
     <section id="nos-services" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] text-6xl">Nos services</h2>
+        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Nos services</h2>
         <UiSubline />
       </header>
 
@@ -123,7 +123,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
         h4="Correspondre à l'ère du temps">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             À chaque étape, <strong>Cortex Studio</strong> déploie des stratégies qui favorisent la pertinence des
             contenus.
             <br>
@@ -133,7 +133,7 @@
             Elle dresse la route à suivre pour s'exprimer et les processus de productions adaptées.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio propose des contenus déterminants. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio propose des contenus déterminants. »</p>
             <ul class="list-disc pl-4">
               <li>analyse de compétitivité</li>
               <li>développement personnalisé</li>
@@ -150,7 +150,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
         h4="L'essence et la forme">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Les contenus sont des « véhicules » qui portent le sens et l'apparence du projet diffusé.
             <br>
             Cerner dans le projet de communication,
@@ -160,7 +160,7 @@
             la nature du projet dans son essence.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio définit les objets médias. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio définit les objets médias. »</p>
             <ul class="list-disc pl-4">
               <li>études de tendance</li>
               <li>design scénique</li>
@@ -178,7 +178,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
         h4="De la puissance à l'acte">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             <strong>Cortex Studio</strong> pilote l'ensemble des moyens de production digitale.
             <br>
             La production est au centre de la dynamique de <strong>Cortex Studio</strong>. Elle nourrit la créativité et
@@ -187,7 +187,7 @@
             améliore les procédés.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio est l'outil facilitateur de production digitale. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est l'outil facilitateur de production digitale. »</p>
           </blockquote>
         </template>
       </ContentVideo>
@@ -196,7 +196,7 @@
         src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
         h4="Incubateur d'inspiration">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Un maillage technologique dans un workflow au service de la créativité.
             <br>
             Premier à Paris en 2007 à introduire l'ultra haute definition, nos choix technologiques s'adaptent aux
@@ -204,7 +204,7 @@
             Le worflow <strong>Cortex Studio</strong> est 6K-RAW pour le visuel et 24bits/192khz pour l'audio.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio fait la jonction des technologies UHD. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio fait la jonction des technologies UHD. »</p>
           </blockquote>
         </template>
       </ContentVideo>
@@ -212,14 +212,14 @@
 
     <section id="le-studio" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] text-6xl">Le studio</h2>
+        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Le studio</h2>
         <UiSubline />
       </header>
 
       <ContentVideo id="vision" src-video="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
         h3="Vision" h4="Expert en contenus de marques">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Pour répondre aux besoins des annonceurs et des artistes CS propose une approche qui met les contenus
             audiovisuels au centre de la démarche médiatique. CS accompagne les projets en apportant l'expertise de la
             production au service de la création digitale.
@@ -228,14 +228,14 @@
             globales en connectant les talents de la publicité, du web et de l'audiovisuel.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio active la communication. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio active la communication. »</p>
           </blockquote>
         </template>
       </ContentVideo>
 
       <ContentVideo id="model" layout="right" h3="Modèle" h4="Quatre pôles d'expertises complémentaires">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Le modèle <strong>Cortex Studio</strong> place les contenus au centre du processus de communication et
             apporte une solution de production pour tout support, tout écran, tout média.
             <br>
@@ -243,41 +243,41 @@
             d'opinions favorables, à travers le contenu de marque.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio est la synergie des talents. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est la synergie des talents. »</p>
           </blockquote>
         </template>
         <template #rawSrc>
           <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
-              <p class="absolute left-2 top-2 text-2xl underline">.link</p>
+              <p class="absolute left-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.link</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-4)] transition cursor-pointer"
                 @click="popUpModelVideo(1)">
-                <p class="text-xl text-center">Design web et interactif</p>
+                <p class="lg:text-xl md:text-lg text-md text-center">Design web et interactif</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
-              <p class="absolute right-2 top-2 text-2xl underline">.prod</p>
+              <p class="absolute right-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.prod</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-1)] transition cursor-pointer"
                 @click="popUpModelVideo(2)">
-                <p class="text-xl text-center">Production de film</p>
+                <p class="lg:text-xl md:text-lg text-md text-center">Production de film</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
-              <p class="absolute left-2 bottom-2 text-2xl underline">.rec</p>
+              <p class="absolute left-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.rec</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-3)] transition cursor-pointer"
                 @click="popUpModelVideo(3)">
-                <p class="text-xl text-center">Design sonore et traitement du son</p>
+                <p class="lg:text-xl md:text-lg text-md text-center">Design sonore et traitement du son</p>
               </div>
             </div>
             <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
-              <p class="absolute right-2 bottom-2 text-2xl underline">.post</p>
+              <p class="absolute right-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.post</p>
               <div
-                class="absolute inset-0 flex justify-center items-center font-bold text-transparent hover:text-black transition cursor-pointer"
+                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-2)] transition cursor-pointer"
                 @click="popUpModelVideo(4)">
-                <p class="text-xl text-center">Post-prod vidéo & motion design</p>
+                <p class="lg:text-xl md:text-lg text-md text-center">Post-prod vidéo & motion design</p>
               </div>
             </div>
           </div>
@@ -287,7 +287,7 @@
       <ContentVideo id="references" src-img="http://www.cortexstudio.fr/assets/img/references.jpg"
         alt="Image references.jpg" h3="Références" h4="Une expérience pointue">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             La diversité des prestations auprès de nos clients grands comptes dans des domaines aussi variés que le
             luxe, le divertissement, et la culture, constitue la richesse de notre expérience.
             <br>
@@ -295,21 +295,21 @@
             transformation et le mélange des matières sonores et visuelles.
           </p>
           <blockquote>
-            <p class="pb-4 text-lg italic">« Cortex Studio optimise la communication des marques. »</p>
+            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio optimise la communication des marques. »</p>
           </blockquote>
         </template>
       </ContentVideo>
 
       <ContentVideo id="historical" layout="right" h3="Historique" h4="Artisan sonore et visuel depuis 2005">
         <template #content>
-          <p class="text-justify text-lg leading-8">
+          <p class="text-justify lg:text-lg text-md leading-8">
             Initié en 2005, le projet <strong>Cortex Studio</strong> rassemble un réseau de professionnels pour apporter
             une solution globale image et son.
           </p>
         </template>
         <template #rawSrc>
           <div class="w-full aspect-video bg-[var(--var-color-bg)] flex flex-col justify-center items-center">
-            <div class="p-2 flex gap-4 justify-evenly items-center border-b-4 border-dashed text-lg font-bold">
+            <div class="p-2 flex gap-4 flex-wrap justify-evenly items-center border-b-4 border-dashed font-bold">
               <span class="text-xs">2006</span>
               <span class="text-sm">2007</span>
               <span class="text-base">2008</span>
@@ -320,7 +320,7 @@
               <span class="text-4xl">2019</span>
               <span class="text-5xl">2024</span>
             </div>
-            <p class="p-8 text-center text-xl">
+            <p class="p-8 text-center lg:text-xl text-lg">
               L'activité s'installe dans un studio du 10eme arrondissement de Paris.
               <br>
               Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la
@@ -334,12 +334,12 @@
     <section id="contactez-nous"
       class="pt-[var(--var-header-height)] xl:mb-8 mb-0 px-4 pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
       <header class="px-8 pb-8 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] text-6xl">Contactez-nous</h2>
+        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Contactez-nous</h2>
         <UiSubline />
       </header>
       <div class="p-4 flex lg:flex-row flex-col gap-4 justify-evenly">
         <div class="basis-1/2 lg:max-w-[400px] flex flex-col">
-          <p class="shrink-0 text-lg text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt et nous
+          <p class="shrink-0 lg:text-lg text-md text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt et nous
             serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
             potentielles, n'hésitez pas à nous contacter en utilisant ce formulaire.</p>
@@ -370,9 +370,9 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience interactive</h3>
         <p class="text-sm italic">création/editorial/developpement</p>
-        <p class="text-lg">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
+        <p class="lg:text-lg text-md">Instaurer des univers immersifs par des langages forts et de nouveaux concepts interactifs.
         </p>
-        <p class="text-lg">A l'affut des dernières tendances .link propose des créations et conçoit des interfaces
+        <p class="lg:text-lg text-md">A l'affut des dernières tendances .link propose des créations et conçoit des interfaces
           novatrices, vecteurs
           de relations entre les publics et la marque.</p>
         <p class="text-xl text-[var(--var-color-4)]">CS.link est la division spécialisée dans la conception de sites web
@@ -398,9 +398,9 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience scénographique</h3>
         <p class="text-sm italic">scénographie/captation/réalisation de films</p>
-        <p class="text-lg">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
+        <p class="lg:text-lg text-md">Mettre en scène vos projets de communication par des narrations pertinentes et l'emploi de
           technologies de pointe.</p>
-        <p class="text-lg">
+        <p class="lg:text-lg text-md">
           <strong>CS.prod coordonne les talents et les outils pour procurer un discours esthétique et clair à votre
             communication audiovisuelle.</strong>
         </p>
@@ -427,15 +427,15 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expériences sonores</h3>
         <p class="text-sm italic">sound-design/travail du son</p>
-        <p class="text-lg">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
+        <p class="lg:text-lg text-md">Orchestrer des univers sonores à travers la recherche, la composition et le traitement du
           son.</p>
-        <p class="text-lg">Le son a un impact déterminant sur la perception. Seul ou en soutien à l'image, le son est
+        <p class="lg:text-lg text-md">Le son a un impact déterminant sur la perception. Seul ou en soutien à l'image, le son est
           vecteur d'émotions.</p>
-        <p class="text-lg">
+        <p class="lg:text-lg text-md">
           <strong>Le langage sonore participe à l'élaboration, au ton, à l'intensité du message et fait appel à la
             sensibilité.</strong>
         </p>
-        <p class="text-lg">
+        <p class="lg:text-lg text-md">
           <strong>CS.prod coordonne les talents et les outils pour procurer un discours esthétique et clair à votre
             communication audiovisuelle.</strong>
         </p>
@@ -462,8 +462,8 @@
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expériences visuelles</h3>
         <p class="text-sm italic">visual design/vfx/post-production video</p>
-        <p class="text-lg">Concevoir le traitement de l'image en cohérence avec le projet de création.</p>
-        <p class="text-lg"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
+        <p class="lg:text-lg text-md">Concevoir le traitement de l'image en cohérence avec le projet de création.</p>
+        <p class="lg:text-lg text-md"><strong>CS.post réunit les idées et le savoir-faire pour être vu, dans tous les formats
             (SD,HD,4K,6K).</strong></p>
         <p class="text-xl text-[var(--var-color-2)]">CS.post est la division experte dans l'image.</p>
         <p class="text-xl"><b>Savoir-faire :</b></p>
