@@ -32,7 +32,8 @@
             disableOnInteraction: false,
           }">
           <SwiperSlide v-for="(brand, i) in brands" :key="i" class="grayscale hover:grayscale-0 transition-all">
-            <img class="md:w-[100px] sm:w-[80px] w-[60px] md:h-[100px] sm:h-[80px] h-[60px]" :src="'/images/' + brand.src" alt="Client logo" />
+            <img class="md:w-[100px] sm:w-[80px] w-[60px] md:h-[100px] sm:h-[80px] h-[60px]"
+              :src="'/images/' + brand.src" alt="Client logo" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -40,308 +41,303 @@
   </div>
 
   <div class="max-w-full w-screen flex flex-col items-center">
-    <section id="notre-travail" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
-      <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Notre travail</h2>
-        <UiSubline />
-      </header>
-
-      <ContentVideo id="showreel"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
-        h4="Créer des expériences digitales">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            <strong>Creative Studio</strong> a l'expertise pour déterminer la stratégie de contenus et la réaliser,
-            procéder à la captation, au traitement du visuel, du son et à sa diffusion.
-            <br>
-            Des divisions articulées pour évoquer les marques (.prod.post.rec.link).
-            <br>
-            Creative Studio est le partenaire des projets artistiques et commerciaux.
-          </p>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="jobs" layout="right"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
-        h4="Pure player indépendant">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Spécialisé dans la production digitale et audiovisuelle, <strong>Cortext Studio</strong> constitue
-            un maillage de compétences pluri-disciplinaires
-            qui rend possible les projets
-            les plus qualitatifs et exigeants.
-          </p>
-          <blockquote>
-            <p class="lg:text-lg text-md italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie
-              votre
-              communication digitale. »</p>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="experimentations"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
-        h3="Expérimentations" h4="Captures insolites">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Révélations des détails invisibles d'un orage sous l'oeil d'une caméra à l'affut. Expérimenter aujourd'hui,
-            c'est maitriser demain pour vos projets.
-            <br>
-            De nombreuses expérimentations digitales sont en cours.
-            <br>
-            Nous participons aux développements de la captation, du traitement sonore et visuel et des nouveaux usages
-            médiatiques.
-          </p>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="offers" layout="right"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
-        h4="Des offres pour les annonceurs, les agences et les producteurs">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            <strong>Cortex Studio</strong> maximise la qualité et la pertinence des contenus.
-            <br>
-            <strong>Cortex Studio</strong> propose des offres adaptées pour intégrer des équipes déjà opérantes, ou en
-            constituer de nouvelles.
-            <br>
-            <strong>Cortex Studio</strong> apporte des solutions par le conseil, la prise en charge exécutive et la
-            direction de projet.
-            <br>
-            <strong>Cortex Studio</strong> articule les compétences en parfaite confidentialité.
-          </p>
-        </template>
-      </ContentVideo>
-    </section>
-
-    <section id="nos-services" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
-      <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Nos services</h2>
-        <UiSubline />
-      </header>
-
-      <ContentVideo id="strategy"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
-        h4="Correspondre à l'ère du temps">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            À chaque étape, <strong>Cortex Studio</strong> déploie des stratégies qui favorisent la pertinence des
-            contenus.
-            <br>
-            Alors que la stratégie marketing va identifier un besoin de communication, la stratégie de contenu propose «
-            le comment ».
-            <br>
-            Elle dresse la route à suivre pour s'exprimer et les processus de productions adaptées.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio propose des contenus déterminants. »</p>
-            <ul class="list-disc pl-4">
-              <li>analyse de compétitivité</li>
-              <li>développement personnalisé</li>
-              <li>analyse web</li>
-              <li>référencement</li>
-              <li>planification de projet</li>
-              <li>stratégie de réseaux sociaux</li>
-            </ul>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="creation" layout="right"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
-        h4="L'essence et la forme">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Les contenus sont des « véhicules » qui portent le sens et l'apparence du projet diffusé.
-            <br>
-            Cerner dans le projet de communication,
-            les objectifs, les thèmes et la mission
-            que devront remplir les contenus
-            pour en choisir le design, c'est comprendre
-            la nature du projet dans son essence.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio définit les objets médias. »</p>
-            <ul class="list-disc pl-4">
-              <li>études de tendance</li>
-              <li>design scénique</li>
-              <li>design graphique</li>
-              <li>design animé</li>
-              <li>design sonore</li>
-              <li>design d'interaction</li>
-              <li>architecture d'Information</li>
-            </ul>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="production"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
-        h4="De la puissance à l'acte">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            <strong>Cortex Studio</strong> pilote l'ensemble des moyens de production digitale.
-            <br>
-            La production est au centre de la dynamique de <strong>Cortex Studio</strong>. Elle nourrit la créativité et
-            devient le levier qui bascule un projet en réalisation concrète diffusée.
-            Nous avons circonscrit l'ensemble des solutions de production dans un modèle qui articule, élève, et
-            améliore les procédés.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est l'outil facilitateur de production digitale. »
-            </p>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="technology" layout="right"
-        src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
-        h4="Incubateur d'inspiration">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Un maillage technologique dans un workflow au service de la créativité.
-            <br>
-            Premier à Paris en 2007 à introduire l'ultra haute definition, nos choix technologiques s'adaptent aux
-            projets inédits.
-            Le worflow <strong>Cortex Studio</strong> est 6K-RAW pour le visuel et 24bits/192khz pour l'audio.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio fait la jonction des technologies UHD. »</p>
-          </blockquote>
-        </template>
-      </ContentVideo>
-    </section>
-
-    <section id="le-studio" class="pt-[var(--var-header-height)] sm:p-4 w-full min-h-screen">
-      <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Le studio</h2>
-        <UiSubline />
-      </header>
-
-      <ContentVideo id="vision" src-video="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
-        h3="Vision" h4="Expert en contenus de marques">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Pour répondre aux besoins des annonceurs et des artistes CS propose une approche qui met les contenus
-            audiovisuels au centre de la démarche médiatique. CS accompagne les projets en apportant l'expertise de la
-            production au service de la création digitale.
-            <br>
-            <strong>Cortex Studio</strong> intervient sur les missions ponctuelles et les opérations de communications
-            globales en connectant les talents de la publicité, du web et de l'audiovisuel.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio active la communication. »</p>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="model" layout="right" h3="Modèle" h4="Quatre pôles d'expertises complémentaires">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Le modèle <strong>Cortex Studio</strong> place les contenus au centre du processus de communication et
-            apporte une solution de production pour tout support, tout écran, tout média.
-            <br>
-            Le modèle articule les expertises pour concevoir et réaliser des projets, vecteurs d'interactions et
-            d'opinions favorables, à travers le contenu de marque.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est la synergie des talents. »</p>
-          </blockquote>
-        </template>
-        <template #rawSrc>
-          <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
-            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
-              <p class="absolute left-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.link</p>
-              <div
-                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-4)] transition cursor-pointer"
-                @click="popUpModelVideo(1)">
-                <p class="lg:text-xl md:text-lg text-md text-center">Design web et interactif</p>
-              </div>
-            </div>
-            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
-              <p class="absolute right-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.prod</p>
-              <div
-                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-1)] transition cursor-pointer"
-                @click="popUpModelVideo(2)">
-                <p class="lg:text-xl md:text-lg text-md text-center">Production de film</p>
-              </div>
-            </div>
-            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
-              <p class="absolute left-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.rec</p>
-              <div
-                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-3)] transition cursor-pointer"
-                @click="popUpModelVideo(3)">
-                <p class="lg:text-xl md:text-lg text-md text-center">Design sonore et traitement du son</p>
-              </div>
-            </div>
-            <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
-              <p class="absolute right-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.post</p>
-              <div
-                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-2)] transition cursor-pointer"
-                @click="popUpModelVideo(4)">
-                <p class="lg:text-xl md:text-lg text-md text-center">Post-prod vidéo & motion design</p>
-              </div>
-            </div>
-            <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  flex justify-center items-center bg-white border border-black rounded-full overflow-hidden"
-              @click="popUpModelVideo(5)">
-              <p class="px-4 py-2 text-center text-md font-bold underline">.content</p>
-              <div
-                class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-white transition cursor-pointer"
-                @click="popUpModelVideo(4)">
-                <p class="text-md text-center">Services</p>
-              </div>
-            </div>
-          </div>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="references" src-img="http://www.cortexstudio.fr/assets/img/references.jpg"
-        alt="Image references.jpg" h3="Références" h4="Une expérience pointue">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            La diversité des prestations auprès de nos clients grands comptes dans des domaines aussi variés que le
-            luxe, le divertissement, et la culture, constitue la richesse de notre expérience.
-            <br>
-            Nous travaillons pour valoriser des narrations artistiques et positives en maîtrisant la capture, la
-            transformation et le mélange des matières sonores et visuelles.
-          </p>
-          <blockquote>
-            <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio optimise la communication des marques. »</p>
-          </blockquote>
-        </template>
-      </ContentVideo>
-
-      <ContentVideo id="historical" layout="right" h3="Historique" h4="Artisan sonore et visuel depuis 2005">
-        <template #content>
-          <p class="text-justify lg:text-lg text-md leading-8">
-            Initié en 2005, le projet <strong>Cortex Studio</strong> rassemble un réseau de professionnels pour apporter
-            une solution globale image et son.
-          </p>
-        </template>
-        <template #rawSrc>
-          <div class="w-full aspect-video bg-[var(--var-color-bg)] flex flex-col justify-center items-center">
-            <div class="p-2 flex gap-4 flex-wrap justify-evenly items-center border-b-4 border-dashed font-bold">
-              <span class="text-xs">2006</span>
-              <span class="text-sm">2007</span>
-              <span class="text-base">2008</span>
-              <span class="text-lg">2009</span>
-              <span class="text-xl">2010</span>
-              <span class="text-2xl">2012</span>
-              <span class="text-3xl">2015</span>
-              <span class="text-4xl">2019</span>
-              <span class="text-5xl">2024</span>
-            </div>
-            <p class="p-8 text-center lg:text-xl text-lg">
-              L'activité s'installe dans un studio du 10eme arrondissement de Paris.
+    <LayoutContentVideo id="notre-travail" title="Notre travail">
+      <template #content>
+        <ContentVideo id="showreel"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
+          h4="Créer des expériences digitales">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              <strong>Creative Studio</strong> a l'expertise pour déterminer la stratégie de contenus et la réaliser,
+              procéder à la captation, au traitement du visuel, du son et à sa diffusion.
               <br>
-              Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la
-              vidéo.
+              Des divisions articulées pour évoquer les marques (.prod.post.rec.link).
+              <br>
+              Creative Studio est le partenaire des projets artistiques et commerciaux.
             </p>
-          </div>
-        </template>
-      </ContentVideo>
-    </section>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="jobs" layout="right"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
+          h4="Pure player indépendant">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Spécialisé dans la production digitale et audiovisuelle, <strong>Cortext Studio</strong> constitue
+              un maillage de compétences pluri-disciplinaires
+              qui rend possible les projets
+              les plus qualitatifs et exigeants.
+            </p>
+            <blockquote>
+              <p class="lg:text-lg text-md italic text-black">« De la réflexion à la diffusion, Cortex Studio déploie
+                votre
+                communication digitale. »</p>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="experimentations"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
+          h3="Expérimentations" h4="Captures insolites">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Révélations des détails invisibles d'un orage sous l'oeil d'une caméra à l'affut. Expérimenter
+              aujourd'hui,
+              c'est maitriser demain pour vos projets.
+              <br>
+              De nombreuses expérimentations digitales sont en cours.
+              <br>
+              Nous participons aux développements de la captation, du traitement sonore et visuel et des nouveaux usages
+              médiatiques.
+            </p>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="offers" layout="right"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
+          h4="Des offres pour les annonceurs, les agences et les producteurs">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              <strong>Cortex Studio</strong> maximise la qualité et la pertinence des contenus.
+              <br>
+              <strong>Cortex Studio</strong> propose des offres adaptées pour intégrer des équipes déjà opérantes, ou en
+              constituer de nouvelles.
+              <br>
+              <strong>Cortex Studio</strong> apporte des solutions par le conseil, la prise en charge exécutive et la
+              direction de projet.
+              <br>
+              <strong>Cortex Studio</strong> articule les compétences en parfaite confidentialité.
+            </p>
+          </template>
+        </ContentVideo>
+      </template>
+    </LayoutContentVideo>
+
+    <LayoutContentVideo id="nos-services" title="Nos services">
+      <template #content>
+        <ContentVideo id="strategy"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
+          h4="Correspondre à l'ère du temps">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              À chaque étape, <strong>Cortex Studio</strong> déploie des stratégies qui favorisent la pertinence des
+              contenus.
+              <br>
+              Alors que la stratégie marketing va identifier un besoin de communication, la stratégie de contenu propose
+              «
+              le comment ».
+              <br>
+              Elle dresse la route à suivre pour s'exprimer et les processus de productions adaptées.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio propose des contenus déterminants. »</p>
+              <ul class="list-disc pl-4">
+                <li>analyse de compétitivité</li>
+                <li>développement personnalisé</li>
+                <li>analyse web</li>
+                <li>référencement</li>
+                <li>planification de projet</li>
+                <li>stratégie de réseaux sociaux</li>
+              </ul>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="creation" layout="right"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
+          h4="L'essence et la forme">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Les contenus sont des « véhicules » qui portent le sens et l'apparence du projet diffusé.
+              <br>
+              Cerner dans le projet de communication,
+              les objectifs, les thèmes et la mission
+              que devront remplir les contenus
+              pour en choisir le design, c'est comprendre
+              la nature du projet dans son essence.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio définit les objets médias. »</p>
+              <ul class="list-disc pl-4">
+                <li>études de tendance</li>
+                <li>design scénique</li>
+                <li>design graphique</li>
+                <li>design animé</li>
+                <li>design sonore</li>
+                <li>design d'interaction</li>
+                <li>architecture d'Information</li>
+              </ul>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="production"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
+          h4="De la puissance à l'acte">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              <strong>Cortex Studio</strong> pilote l'ensemble des moyens de production digitale.
+              <br>
+              La production est au centre de la dynamique de <strong>Cortex Studio</strong>. Elle nourrit la créativité
+              et
+              devient le levier qui bascule un projet en réalisation concrète diffusée.
+              Nous avons circonscrit l'ensemble des solutions de production dans un modèle qui articule, élève, et
+              améliore les procédés.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est l'outil facilitateur de production digitale.
+                »
+              </p>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="technology" layout="right"
+          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
+          h4="Incubateur d'inspiration">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Un maillage technologique dans un workflow au service de la créativité.
+              <br>
+              Premier à Paris en 2007 à introduire l'ultra haute definition, nos choix technologiques s'adaptent aux
+              projets inédits.
+              Le worflow <strong>Cortex Studio</strong> est 6K-RAW pour le visuel et 24bits/192khz pour l'audio.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio fait la jonction des technologies UHD. »</p>
+            </blockquote>
+          </template>
+        </ContentVideo>
+      </template>
+    </LayoutContentVideo>
+
+    <LayoutContentVideo id="le-studio" title="Le studio">
+      <template #content>
+        <ContentVideo id="vision" src-video="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
+          h3="Vision" h4="Expert en contenus de marques">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Pour répondre aux besoins des annonceurs et des artistes CS propose une approche qui met les contenus
+              audiovisuels au centre de la démarche médiatique. CS accompagne les projets en apportant l'expertise de la
+              production au service de la création digitale.
+              <br>
+              <strong>Cortex Studio</strong> intervient sur les missions ponctuelles et les opérations de communications
+              globales en connectant les talents de la publicité, du web et de l'audiovisuel.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio active la communication. »</p>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="model" layout="right" h3="Modèle" h4="Quatre pôles d'expertises complémentaires">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Le modèle <strong>Cortex Studio</strong> place les contenus au centre du processus de communication et
+              apporte une solution de production pour tout support, tout écran, tout média.
+              <br>
+              Le modèle articule les expertises pour concevoir et réaliser des projets, vecteurs d'interactions et
+              d'opinions favorables, à travers le contenu de marque.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio est la synergie des talents. »</p>
+            </blockquote>
+          </template>
+          <template #rawSrc>
+            <div class="relative bg-gray-900 w-full aspect-video flex justify-center flex-wrap">
+              <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-4)]">
+                <p class="absolute left-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.link</p>
+                <div
+                  class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-4)] transition cursor-pointer"
+                  @click="popUpModelVideo(1)">
+                  <p class="lg:text-xl md:text-lg text-md text-center">Design web et interactif</p>
+                </div>
+              </div>
+              <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-1)]">
+                <p class="absolute right-2 top-2 lg:text-xl md:text-lg sm:text-md underline">.prod</p>
+                <div
+                  class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-1)] transition cursor-pointer"
+                  @click="popUpModelVideo(2)">
+                  <p class="lg:text-xl md:text-lg text-md text-center">Production de film</p>
+                </div>
+              </div>
+              <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-3)]">
+                <p class="absolute left-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.rec</p>
+                <div
+                  class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-3)] transition cursor-pointer"
+                  @click="popUpModelVideo(3)">
+                  <p class="lg:text-xl md:text-lg text-md text-center">Design sonore et traitement du son</p>
+                </div>
+              </div>
+              <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
+                <p class="absolute right-2 bottom-2 lg:text-xl md:text-lg sm:text-md underline">.post</p>
+                <div
+                  class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-2)] transition cursor-pointer"
+                  @click="popUpModelVideo(4)">
+                  <p class="lg:text-xl md:text-lg text-md text-center">Post-prod vidéo & motion design</p>
+                </div>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  flex justify-center items-center bg-white border border-black rounded-full overflow-hidden"
+                @click.stop="popUpModelVideo(5)">
+                <p class="px-4 py-2 text-center text-md font-bold underline">.content</p>
+                <div
+                  class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-white transition cursor-pointer">
+                  <p class="text-md text-center">Services</p>
+                </div>
+              </div>
+            </div>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="references" src-img="http://www.cortexstudio.fr/assets/img/references.jpg"
+          alt="Image references.jpg" h3="Références" h4="Une expérience pointue">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              La diversité des prestations auprès de nos clients grands comptes dans des domaines aussi variés que le
+              luxe, le divertissement, et la culture, constitue la richesse de notre expérience.
+              <br>
+              Nous travaillons pour valoriser des narrations artistiques et positives en maîtrisant la capture, la
+              transformation et le mélange des matières sonores et visuelles.
+            </p>
+            <blockquote>
+              <p class="pb-4 lg:text-lg text-md italic">« Cortex Studio optimise la communication des marques. »</p>
+            </blockquote>
+          </template>
+        </ContentVideo>
+
+        <ContentVideo id="historical" layout="right" h3="Historique" h4="Artisan sonore et visuel depuis 2005">
+          <template #content>
+            <p class="text-justify lg:text-lg text-md leading-8">
+              Initié en 2005, le projet <strong>Cortex Studio</strong> rassemble un réseau de professionnels pour
+              apporter
+              une solution globale image et son.
+            </p>
+          </template>
+          <template #rawSrc>
+            <div class="w-full aspect-video bg-[var(--var-color-bg)] flex flex-col justify-center items-center">
+              <div class="p-2 flex gap-4 flex-wrap justify-evenly items-center border-b-4 border-dashed font-bold">
+                <span class="text-xs">2006</span>
+                <span class="text-sm">2007</span>
+                <span class="text-base">2008</span>
+                <span class="text-lg">2009</span>
+                <span class="text-xl">2010</span>
+                <span class="text-2xl">2012</span>
+                <span class="text-3xl">2015</span>
+                <span class="text-4xl">2019</span>
+                <span class="text-5xl">2024</span>
+              </div>
+              <p class="p-8 text-center lg:text-xl text-lg">
+                L'activité s'installe dans un studio du 10eme arrondissement de Paris.
+                <br>
+                Elle est dédiée dans un premier temps aux prestations techniques de post-production de l'audio et de la
+                vidéo.
+              </p>
+            </div>
+          </template>
+        </ContentVideo>
+      </template>
+    </LayoutContentVideo>
 
     <section id="contactez-nous"
       class="pt-[var(--var-header-height)] xl:mb-8 mb-0 sm:px-4 sm:pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
@@ -766,5 +762,4 @@ video {
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}
-</style>
+}</style>
