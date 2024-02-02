@@ -25,14 +25,14 @@
       </div>
     </section>
     <section class="shrink-0 max-w-full">
-      <div id="logo_slider" class="py-4 max-w-7xl">
+      <div id="logo_slider" class="max-w-7xl">
         <Swiper :modules="[SwiperAutoplay]" :loop="true" slides-per-view="auto" :speed="7000" :allow-touch-move="false"
           :autoplay="{
             delay: 1,
             disableOnInteraction: false,
           }">
           <SwiperSlide v-for="(brand, i) in brands" :key="i" class="grayscale hover:grayscale-0 transition-all">
-            <img width="100px" height="100px" :src="'/images/' + brand.src" alt="Client logo" />
+            <img class="md:w-[100px] sm:w-[80px] w-[60px] md:h-[100px] sm:h-[80px] h-[60px]" :src="'/images/' + brand.src" alt="Client logo" />
           </SwiperSlide>
         </Swiper>
       </div>
