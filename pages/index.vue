@@ -675,8 +675,16 @@ const bgVideo5 = ref<boolean>(false)
 
   .swiper-slide {
     display: flex;
-    padding: 10px 50px;
+    padding: 10px 20px;
     width: auto;
+
+    @media (min-width: 640px) {
+      padding: 10px 30px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 10px 50px;
+    }
   }
 
   .swiper::before,
