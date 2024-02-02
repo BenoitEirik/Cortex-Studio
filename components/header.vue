@@ -27,6 +27,11 @@
         <li class="py-6">
           <NuxtLink to="/#contactez-nous" class="font-bold" @pointerover="closeMenu()">Contactez-nous</NuxtLink>
         </li>
+        <li class="py-6">
+          <div class="cursor-pointer" title="Accès partenaire">
+            <Icon name="i-iconoir-log-in" size="1.5rem" />
+          </div>
+        </li>
       </ul>
       <div
         class="mx-4 my-4 px-4 py-2 lg:hidden flex justify-center items-center bg-[var(--var-color-bg)] border-2 border-gray-800 rounded-3xl cursor-pointer rounded-r-3xl"
@@ -154,6 +159,10 @@ nav {
 
   ul li {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  ul li svg {
+    filter: drop-shadow(0 0 1px black);
   }
 }
 </style>

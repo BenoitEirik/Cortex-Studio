@@ -15,7 +15,9 @@
       <div id="box_video"
         class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn">
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src"
-          @ended="nextLandingVideo(undefined)" @dblclick="landingVideoFullscreen" />
+          @ended="nextLandingVideo()" @dblclick="landingVideoFullscreen"
+          @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
+          :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
             class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1"
@@ -595,34 +597,40 @@ const indexLandingVideo = ref(0)
 const landingVideos = [
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/1_intro.mp4',
-    color: '#fff'
+    color: '#fff',
+    bgVideo: -1
   },
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/2_prod.mp4',
-    color: '#92ffa1'
+    color: '#92ffa1',
+    bgVideo: 2
   }
   ,
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/3_post.mp4',
-    color: '#75d4ff'
+    color: '#75d4ff',
+    bgVideo: 4
   }
   ,
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/4_rec.mp4',
-    color: '#c724dd'
+    color: '#c724dd',
+    bgVideo: 3
   }
   ,
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/5_link.mp4',
-    color: '#fefead'
+    color: '#fefead',
+    bgVideo: 1
   }
   ,
   {
     src: 'http://www.cortexstudio.fr/assets/video/home_movies/6_content.mp4',
-    color: '#fff'
+    color: '#fff',
+    bgVideo: 5
   }
 ]
-const nextLandingVideo = (index: number | undefined) => {
+const nextLandingVideo = (index: number | undefined = undefined) => {
   if (index != undefined && index >= 0) {
     indexLandingVideo.value = index
   } else if ((indexLandingVideo.value + 1) === landingVideos.length) {
@@ -762,4 +770,5 @@ video {
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}</style>
+}
+</style>
