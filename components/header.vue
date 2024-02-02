@@ -1,10 +1,10 @@
 <template>
 <header class="fixed top-0 h-0 z-10 max-w-full w-screen flex justify-center">
-  <div class="absolute left-4 right-4 flex flex-col items-center">
+  <div class="absolute left-4 right-4 flex flex-col items-center" @pointerover="closeMenu()">
     <div class="h-2 w-full" @pointerover="closeMenu()" />
     <nav ref="headerRef"
       class="max-w-7xl w-full max-h-[var(--var-header-height)] flex justify-between items-center rounded-3xl"
-      :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }">
+      :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }" @pointerover.stop="">
       <div class="grow self-stretch pl-6 py-4 flex items-center rounded-l-3xl" @pointerover="closeMenu()">
         <NuxtLink to="/">
           <NuxtImg id="logo_header" width="200px" src="logo.png" alt="Cortex Studio logo" />

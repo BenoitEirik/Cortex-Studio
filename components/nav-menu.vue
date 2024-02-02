@@ -1,9 +1,9 @@
 <template>
 <div
-  class="fixed z-50 lg:top-[var(--var-header-height)] lg:pt-2 p-4 w-screen max-w-full lg:h-[calc(100% - var(--var-header-height))] h-screen max-h-screen justify-center items-start overflow-auto"
-  :class="{ hidden: !display, flex: display }">
+  class="fixed z-50 lg:top-[var(--var-header-height)] lg:pt-0 p-4 w-screen max-w-full lg:h-[calc(100% - var(--var-header-height))] h-screen max-h-screen justify-center items-start overflow-auto"
+  :class="{ hidden: !display, flex: display }" @pointerover="toggle('', false)">
   <!-- depth '' -->
-  <ul v-if="depthIndex === '#'"
+  <ul v-if="depthIndex === '#'" @pointerover.stop=""
     class="p-8 max-w-7xl w-full flex flex-col gap-8 items-center bg-[var(--var-color-bg)] rounded-3xl border-2 border-gray-800 font-['ClashDisplay-Bold'] text-3xl text-center">
     <li>
       <p class="font-bold cursor-pointer" @click="depthIndex = '#notre-travail'">Notre travail</p>
