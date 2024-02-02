@@ -1,14 +1,17 @@
 <template>
-<article :id="props.id" class="px-4 py-20 w-full flex justify-evenly gap-8 items-start">
+<article :id="props.id" class="px-4 py-20 w-full flex md:flex-row flex-col justify-evenly gap-8 items-start">
+  <h3 class="md:hidden block px-2 py-1 text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
+      :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
+      {{ props.h3 }}</h3>
   <div class="basis-1/2 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded overflow-hidden"
-    :class="{ video_perspective_left: layout === 'left', video_perspective_right: layout === 'right', 'order-2': layout === 'right' }">
+    :class="{ video_perspective_left: layout === 'left', video_perspective_right: layout === 'right', 'md:order-2 order-2': layout === 'right' }">
     <video v-if="props.srcVideo !== ''" ref="videoRef" :src="props.srcVideo" preload="none" muted loop class="w-full">{{
       props.alt }}</video>
     <NuxtImg v-if="props.srcImg !== ''" :src="props.srcImg" :alt="props.alt" class="w-full" />
     <slot name="rawSrc" />
   </div>
-  <div class="basis-1/2 max-w-[800px] flex flex-col gap-8" :class="{ 'order-1': layout === 'right' }">
-    <h3 class="px-2 py-1 text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
+  <div class="basis-1/2 max-w-[800px] flex flex-col gap-8" :class="{ 'md:order-1 order-2': layout === 'right' }">
+    <h3 class="md:block hidden px-2 py-1 text-4xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
       :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
       {{ props.h3 }}</h3>
     <h4 class="text-2xl font-['ClashDisplay-Bold']"

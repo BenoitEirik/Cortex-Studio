@@ -1,6 +1,6 @@
 <template>
 <div
-  class="sticky z-50 lg:pt-[var(--var-header-height)] p-4 w-screen max-w-full h-screen max-h-screen justify-center items-start overflow-auto"
+  class="fixed z-50 lg:top-[var(--var-header-height)] lg:pt-2 p-4 w-screen max-w-full lg:h-[calc(100% - var(--var-header-height))] h-screen max-h-screen justify-center items-start overflow-auto"
   :class="{ hidden: !display, flex: display }">
   <!-- depth '' -->
   <ul v-if="depthIndex === '#'"
@@ -127,46 +127,46 @@
       src-video="http://www.cortexstudio.fr/assets/video/stickers/vision.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <p>
-            Approche par les contenus
-            l'expertise de la production
-            au service de la creation
-          </p>
+          Approche par les contenus
+          l'expertise de la production
+          au service de la creation
+        </p>
       </template>
     </DepthItemMenu>
-    <DepthItemMenu href="/#model" title="Modèle"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/model.mp4" class="basis-1/2" @click="toggle('')">
+    <DepthItemMenu href="/#model" title="Modèle" src-video="http://www.cortexstudio.fr/assets/video/stickers/model.mp4"
+      class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
-            <li>.prod</li>
-            <li>.post</li>
-            <li>.rec</li>
-            <li>.link</li>
-            <li>.content</li>
-          </ul>
+          <li>.prod</li>
+          <li>.post</li>
+          <li>.rec</li>
+          <li>.link</li>
+          <li>.content</li>
+        </ul>
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#references" title="Références"
       src-video="http://www.cortexstudio.fr/assets/video/stickers/references.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
-            <li>Luxe</li>
-            <li>Grands comptes</li>
-            <li>Corporate</li>
-            <li>Institutionnel</li>
-            <li>Artistique</li>
-          </ul>
+          <li>Luxe</li>
+          <li>Grands comptes</li>
+          <li>Corporate</li>
+          <li>Institutionnel</li>
+          <li>Artistique</li>
+        </ul>
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#historical" title="Historique"
       src-video="http://www.cortexstudio.fr/assets/video/stickers/origin.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
-            <li>Naissance</li>
-            <li>Mise en place</li>
-            <li>Structuration</li>
-            <li>Fonction du réseau</li>
-            <li>Déploiement des talents</li>
-          </ul>
+          <li>Naissance</li>
+          <li>Mise en place</li>
+          <li>Structuration</li>
+          <li>Fonction du réseau</li>
+          <li>Déploiement des talents</li>
+        </ul>
       </template>
     </DepthItemMenu>
   </LayoutDepthItemMenu>
@@ -181,9 +181,14 @@ defineExpose({
   toggle
 })
 
-function toggle(index: string) {
+function toggle(index: string, show: boolean | undefined = undefined) {
   depthIndex.value = index
-  display.value = !display.value
+
+  if (show !== undefined) {
+    display.value = show
+  } else {
+    display.value = !display.value
+  }
 }
 </script>
 
