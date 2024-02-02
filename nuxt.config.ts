@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.scss', 'animate.css/animate.min.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt', 'nuxt-icon'],
   app: {
     head: {
       htmlAttrs: {
@@ -25,9 +25,6 @@ export default defineNuxtConfig({
         class: 'light'
       }
     }
-  },
-  image: {
-    dir: '~/public/images'
   },
   tailwindcss: {
     configPath: '~/tailwind.config.ts'

@@ -3,7 +3,7 @@
   <div class="max-w-7xl w-full p-8 flex lg:flex-row flex-col gap-8 justify-between items-center">
     <div class="self-stretch px-4 py-2 flex lg:flex-col md:flex-row flex-col gap-4 justify-between md:items-start items-center">
       <NuxtLink to="/">
-        <NuxtImg id="logo_footer" width="200px" src="logo.png" alt="Cortex Studio logo" />
+        <img id="logo_footer" width="200px" src="/images/logo.png" alt="Cortex Studio logo" />
       </NuxtLink>
       <div class="text-white text-xs lg:text-left md:text-right text-center">
         <p>© Cortex Studio {{ new Date().getFullYear() }}</p>

@@ -7,7 +7,7 @@
     :class="{ video_perspective_left: layout === 'left', video_perspective_right: layout === 'right', 'md:order-2 order-2': layout === 'right' }">
     <video v-if="props.srcVideo !== ''" ref="videoRef" :src="props.srcVideo" preload="none" muted loop class="w-full">{{
       props.alt }}</video>
-    <NuxtImg v-if="props.srcImg !== ''" :src="props.srcImg" :alt="props.alt" class="w-full" />
+    <img v-if="props.srcImg !== ''" :src="props.srcImg" :alt="props.alt" class="w-full" />
     <slot name="rawSrc" />
   </div>
   <div class="basis-1/2 max-w-[800px] flex flex-col gap-8" :class="{ 'md:order-1 order-2': layout === 'right' }">

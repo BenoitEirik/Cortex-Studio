@@ -32,7 +32,7 @@
             disableOnInteraction: false,
           }">
           <SwiperSlide v-for="(brand, i) in brands" :key="i" class="grayscale hover:grayscale-0 transition-all">
-            <NuxtImg width="100px" height="100px" :src="brand.src" alt="Client logo" />
+            <img width="100px" height="100px" :src="'/images/'+brand.src" alt="Client logo" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -343,7 +343,7 @@
             serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
             potentielles, n'hésitez pas à nous contacter en utilisant ce formulaire.</p>
-          <NuxtImg src="icons/paper-plane.svg" alt="Paper plane" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
+          <img src="/images/icons/paper-plane.svg" alt="Paper plane" class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
         <form @click.prevent="" class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">

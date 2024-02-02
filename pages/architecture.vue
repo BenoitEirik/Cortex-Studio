@@ -15,7 +15,10 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title: 'Cortex Studio - Architecture',
+  meta: [
+    { name: 'description', content: 'Cortex Studio est spécialisé dans le design, le film et la production digitale. Un producteur moderne, inventif et rigoureux, expert audiovisuel. Stratège, designer de l\'image et du son, superviseur de la diffusion. Plus qu\'un studio digital, Cortex Studio est une source créative qui solutionne la production de contenus.' }
+  ]
+})
 </script>
-
-<style></style>
