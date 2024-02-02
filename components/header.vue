@@ -1,6 +1,7 @@
 <template>
-<header class="fixed top-0 h-0 z-10 w-screen flex justify-center">
-  <div class="absolute top-2 left-4 right-4 flex justify-center">
+<header class="fixed top-0 h-0 z-10 max-w-full w-screen flex justify-center">
+  <div class="absolute left-4 right-4 flex flex-col items-center">
+    <div class="h-2 w-full" @pointerover="closeMenu()" />
     <nav ref="headerRef"
       class="max-w-7xl w-full max-h-[var(--var-header-height)] flex justify-between items-center rounded-3xl"
       :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }">
@@ -10,21 +11,21 @@
         </NuxtLink>
       </div>
       <ul
-        class="shrink-0 px-4 py-6 pr-10 hidden lg:flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold'] rounded-r-3xl">
-        <li>
+        class="shrink-0 pr-6 hidden lg:flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold'] rounded-r-3xl">
+        <li class="py-6">
           <NuxtLink to="/#notre-travail" class="font-bold" @pointerover="launchMenu('#notre-travail')"
             @click="closeMenu()">Notre travail</NuxtLink>
         </li>
-        <li>
+        <li class="py-6">
           <NuxtLink to="/#nos-services" class="font-bold" @pointerover="launchMenu('#nos-services')"
             @click="closeMenu()">Nos services</NuxtLink>
         </li>
-        <li>
+        <li class="py-6">
           <NuxtLink to="/#le-studio" class="font-bold" @pointerover="launchMenu('#le-studio')" @click="closeMenu()">Le
             studio</NuxtLink>
         </li>
-        <li>
-          <NuxtLink to="/#contactez-nous" class="font-bold" @click="closeMenu()">Contactez-nous</NuxtLink>
+        <li class="py-6">
+          <NuxtLink to="/#contactez-nous" class="font-bold" @pointerover="closeMenu()">Contactez-nous</NuxtLink>
         </li>
       </ul>
       <div

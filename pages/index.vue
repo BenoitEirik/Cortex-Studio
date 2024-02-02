@@ -1,8 +1,8 @@
 <template>
 <main class="bg-[var(--var-color-bg)]">
-  <div class="w-screen xl:h-screen flex flex-col items-center bg-gray-900">
+  <div class="w-screen max-w-full xl:h-screen flex flex-col items-center bg-gray-900">
     <section id="section_landing"
-      class="pt-[var(--var-header-height)] relative grow w-screen p-4 flex xl:flex-row flex-col justify-evenly items-center gap-4 text-white">
+      class="pt-[var(--var-header-height)] relative grow w-full p-4 flex xl:flex-row flex-col justify-evenly items-center gap-4 text-white">
       <div
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
@@ -39,7 +39,7 @@
     </section>
   </div>
 
-  <div class="w-screen flex flex-col items-center">
+  <div class="max-w-full w-screen flex flex-col items-center">
     <section id="notre-travail" class="pt-[var(--var-header-height)] p-4 w-full min-h-screen">
       <header class="px-8 pb-16 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] text-6xl">Notre travail</h2>
