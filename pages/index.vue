@@ -13,7 +13,7 @@
         <NuxtLink id="cta-btn" to="/#notre-travail">Découvrir</NuxtLink>
       </div>
       <div id="box_video"
-        class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn">
+        class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src"
           @ended="nextLandingVideo()" @dblclick="landingVideoFullscreen"
           @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"

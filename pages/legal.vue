@@ -1,13 +1,14 @@
 <template>
 <main>
   <div class="pt-[var(--var-header-height)] w-screen flex flex-col items-center bg-gray-900">
-    <section class="p-8 max-w-6xl w-full">
-      <NuxtLink to="/">
-        <Icon name="i-iconoir-arrow-left" color="white" size="2rem" />
+    <section class="p-4 max-w-7xl w-full">
+      <NuxtLink to="/" class=" flex gap-4 items-end">
+        <Icon name="i-iconoir-arrow-left" color="white" size="1.5rem" />
+        <span class="text-white">Retour</span>
       </NuxtLink>
     </section>
 
-    <section class="p-4 max-w-6xl w-full flex flex-col gap-8 items-center">
+    <section class="p-4 max-w-7xl w-full flex flex-col gap-8 items-center">
       <NuxtLink to="/">
         <img id="logo" width="200px" src="/images/logo.png" alt="Cortex Studio logo" />
       </NuxtLink>
