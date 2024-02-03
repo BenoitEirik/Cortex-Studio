@@ -14,9 +14,8 @@
       </div>
       <div id="box_video"
         class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
-        <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src"
-          @ended="nextLandingVideo()" @dblclick="landingVideoFullscreen"
-          @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
+        <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src" @ended="nextLandingVideo()"
+          @dblclick="landingVideoFullscreen" @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
           :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
@@ -357,18 +356,22 @@
           <img src="/images/icons/paper-plane.svg" alt="Paper plane"
             class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
-        <form @click.prevent="" class="basis-1/2 flex flex-col gap-8 items-stretch">
+        <form class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">
-            <label for="form-email" class="text-xl font-['ClashDisplay-Bold']">Email</label>
-            <input id="form-email" name="form-emai" type="text" inputmode="email" placeholder="votre@email.com" required
-              class="px-4 py-2 text-black border-4 border-gray-800 rounded-xl">
+            <label for="form-subject" class="text-xl font-['ClashDisplay-Bold']">Sujet</label>
+            <input id="form-subject" name="form-subject" type="text" inputmode="text"
+              placeholder="Demande de renseignements" required
+              class="px-4 py-2 text-black border-4 border-gray-800 rounded-xl"
+              @input="(event) => formSubject = (<HTMLInputElement>event.target).value">
           </span>
           <span class="flex flex-col gap-4">
             <label for="form-msg" class="text-xl font-['ClashDisplay-Bold']">Votre message</label>
             <textarea id="form-msg" name="form-msg" inputmode="text" placeholder="Votre message" spellcheck="true"
-              required class="h-[250px] px-4 py-2 text-black border-4 border-gray-800 rounded-xl" />
+              required class="h-[250px] px-4 py-2 text-black border-4 border-gray-800 rounded-xl"
+              @input="(event) => formBody = (<HTMLTextAreaElement>event.target).value" />
           </span>
-          <button type="submit" id="form-btn" class="self-center">Envoyer</button>
+          <a id="form-btn" class="self-center"
+            :href="'mailto:contact@cortexstudio.eu?&subject=[cortexstudio.fr] ' + formSubject + '&body=' + encodeURIComponent(formBody)">Envoyer</a>
         </form>
       </div>
     </section>
@@ -669,6 +672,9 @@ const bgVideo2 = ref<boolean>(false)
 const bgVideo3 = ref<boolean>(false)
 const bgVideo4 = ref<boolean>(false)
 const bgVideo5 = ref<boolean>(false)
+
+const formSubject = ref<string>('')
+const formBody = ref<string>('')
 </script>
 
 <style lang="scss">
