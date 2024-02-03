@@ -17,7 +17,7 @@
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src"
           @ended="nextLandingVideo()" @dblclick="landingVideoFullscreen"
           @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
-          :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" />
+          :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
             class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1"
@@ -503,7 +503,7 @@
     src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/content.mp4"
     src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/content.mp4">
     <template #content>
-      <article class="p-4 flex flex-col gap-4 justify-start text-black">
+      <article class="p-4 flex flex-col gap-4 justify-start text-gray-800">
         <h3 class="text-4xl">Initiateur d'expérience digitale</h3>
         <p class="text-sm italic">stratégie média /conseil / pilotage / déclinaison média</p>
         <p class="lg:text-lg text-md">Faire converger les compétences autour d'une équipe dédiée pour concevoir une
