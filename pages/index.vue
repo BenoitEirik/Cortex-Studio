@@ -3,6 +3,7 @@
   <div class="w-screen max-w-full xl:h-screen flex flex-col items-center bg-gray-900">
     <section id="section_landing"
       class="pt-[var(--var-header-height)] relative grow w-full p-4 flex xl:flex-row flex-col justify-evenly items-center gap-4 text-white">
+      <div class="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       <div
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
