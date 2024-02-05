@@ -1,5 +1,5 @@
 <template>
-<footer class="max-w-full w-screen flex justify-center bg-gray-900">
+<footer class="pt-4 pb-20 relative max-w-full w-screen flex justify-center [background:radial-gradient(125%_125%_at_50%_10%,theme('colors.gray.900')_40%,black_100%)]">
   <div class="max-w-7xl w-full p-8 flex lg:flex-row flex-col gap-8 justify-between items-center">
     <div class="self-stretch px-4 py-2 flex lg:flex-col md:flex-row flex-col gap-4 justify-between md:items-start items-center">
       <NuxtLink to="/">

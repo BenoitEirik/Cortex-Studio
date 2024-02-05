@@ -342,7 +342,7 @@
     </LayoutContentVideo>
 
     <section id="contactez-nous"
-      class="pt-[var(--var-header-height)] xl:mb-8 mb-0 sm:px-4 sm:pb-4 max-w-7xl w-full bg-gray-900 text-white xl:rounded-3xl">
+      class="pt-[var(--var-header-height)] xl:mb-8 mb-0 sm:px-4 sm:pb-4 max-w-7xl w-full text-white xl:rounded-3xl bg-[radial-gradient(circle_500px_at_50%_200px,theme('colors.slate.800'),theme('colors.gray.900'))]">
       <header class="px-8 pb-8 flex flex-col gap-4 items-center text-center">
         <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Contactez-nous</h2>
         <UiSubline />
