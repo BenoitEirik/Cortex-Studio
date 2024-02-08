@@ -1,6 +1,6 @@
 <template>
 <article :id="props.id" class="px-4 pt-[var(--var-header-height)] w-full flex md:flex-row flex-col justify-evenly gap-8 items-start">
-  <h3 class="md:hidden block px-2 py-1 lg:text-4xl text-3xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
+  <h3 class="md:hidden block px-2 py-1 lg:text-4xl md:text-3xl text-2xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
     :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
     {{ props.h3 }}</h3>
   <div class="basis-1/2 md:mb-10 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded overflow-hidden video-common"
@@ -11,10 +11,10 @@
     <slot name="rawSrc" />
   </div>
   <div class="basis-1/2 max-w-[800px] flex flex-col gap-8" :class="{ 'md:order-1 order-2': layout === 'right' }">
-    <h3 class="md:block hidden px-2 py-1 lg:text-4xl text-3xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
+    <h3 class="md:block hidden px-2 py-1 lg:text-4xl md:text-3xl text-2xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
       :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
       {{ props.h3 }}</h3>
-    <h4 class="text-2xl font-['ClashDisplay-Bold']"
+    <h4 class="font-['ClashDisplay-Bold'] lg:text-3xl md:text-2xl text-xl"
       :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
       {{ props.h4 }}</h4>
     <slot name="content" />
