@@ -7,9 +7,9 @@
       <div
         class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
         <h1 class="xl:text-left text-center max-w-[600px]">
-          <span class="font-['ClashDisplay-Bold'] lg:text-6xl text-5xl">Cortex Studio</span>
+          <span class="font-['ClashDisplay-Bold'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Cortex</span><span class="pl-4 font-['ClashDisplay-Light'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Studio</span>
           <span class="block h-2 border-transparent" />
-          <span class="lg:text-4xl text-3xl">est spécialisé dans le design, le film et la production digitale.</span>
+          <span class="lg:text-4xl md:text-3xl sm:text-2xl text-xl">est spécialisé dans le design, le film et la production digitale.</span>
         </h1>
         <NuxtLink id="cta-btn" to="/#notre-travail">Découvrir</NuxtLink>
       </div>
