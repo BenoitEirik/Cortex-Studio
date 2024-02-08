@@ -10,7 +10,7 @@
 
     <section class="p-4 max-w-7xl w-full flex flex-col gap-8 items-center">
       <NuxtLink to="/">
-        <img id="logo" width="200px" src="/images/logo.png" alt="Cortex Studio logo" />
+        <img id="logo" width="200px" src="/images/logo.webp" alt="Cortex Studio logo" />
       </NuxtLink>
       <div class="text-white">
         <p>© Cortex Studio 2005-{{ new Date().getFullYear() }}</p>

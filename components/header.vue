@@ -7,7 +7,8 @@
       :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }" @pointerover.stop="">
       <div class="grow self-stretch pl-6 py-4 flex items-center rounded-l-3xl" @pointerover="closeMenu()">
         <NuxtLink to="/">
-          <img id="logo_header" width="200px" src="/images/logo.webp" alt="Cortex Studio logo" />
+          <img id="logo_header" src="/images/logo.webp" alt="Cortex Studio logo" class="max-w-[240px] sm:block hidden" />
+          <img id="logo_header" src="/images/logo-small-title.webp" alt="Cortex Studio logo" class="max-w-[95px] sm:hidden block" />
         </NuxtLink>
       </div>
       <ul
