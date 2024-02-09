@@ -18,9 +18,9 @@
       <NuxtLink to="/#contactez-nous" class="font-bold" @click="toggle('')">Contactez-nous</NuxtLink>
     </li>
     <li>
-      <div class="cursor-pointer" title="Accès partenaire" @click="toggle('')">
+      <button type="button" title="Accès partenaire" @click="toggle('');globalStore.showLoginForm(true)">
         <Icon name="i-iconoir-log-in" size="2rem" />
-      </div>
+      </button>
     </li>
   </ul>
 
@@ -195,6 +195,8 @@ function toggle(index: string, show: boolean | undefined = undefined) {
     display.value = !display.value
   }
 }
+
+const globalStore = useGlobalStore()
 </script>
 
 <style></style>

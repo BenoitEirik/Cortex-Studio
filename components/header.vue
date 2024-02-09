@@ -37,9 +37,9 @@
             @pointerover="closeMenu()">Contactez-nous</NuxtLink>
         </li>
         <li class="py-6">
-          <div class="cursor-pointer" title="Accès partenaire">
+          <button type="button" title="Accès partenaire" @click="globalStore.showLoginForm(true)">
             <Icon name="i-iconoir-log-in" size="1.5rem" />
-          </div>
+          </button>
         </li>
       </ul>
       <div
