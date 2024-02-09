@@ -3,30 +3,39 @@
   <div class="absolute left-4 right-4 flex flex-col items-center" @pointerover="closeMenu()">
     <div class="h-2 w-full" @pointerover="closeMenu()" />
     <nav ref="headerRef"
-      class="max-w-7xl w-full max-h-[var(--var-header-height)] flex justify-between items-center sm:rounded-3xl rounded-2xl"
-      :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }" @pointerover.stop="">
+      class="max-w-7xl w-full max-h-[var(--var-header-height)] flex justify-between items-center rounded-3xl"
+      :style="{ 'background': scrolling ? 'rgba(17, 24, 39, 80%)' : 'none' }" :class="{ 'backdrop-blur': scrolling }"
+      @pointerover.stop="">
       <div class="grow self-stretch pl-6 py-4 flex items-center rounded-l-3xl" @pointerover="closeMenu()">
         <NuxtLink to="/">
-          <img id="logo_header" src="/images/logo.webp" alt="Cortex Studio logo" class="max-w-[240px] sm:block hidden" />
-          <img id="logo_header" src="/images/logo-small-title.webp" alt="Cortex Studio logo" class="max-w-[95px] sm:hidden block" />
+          <img id="logo_header" src="/images/logo.webp" alt="Cortex Studio logo"
+            class="max-w-[240px] sm:block hidden" />
+          <img id="logo_header" src="/images/logo-small-title.webp" alt="Cortex Studio logo"
+            class="max-w-[95px] sm:hidden block" />
         </NuxtLink>
       </div>
       <ul
         class="shrink-0 pr-6 hidden lg:flex justify-end gap-4 text-2xl text-white font-['ClashDisplay-Bold'] rounded-r-3xl">
         <li class="py-6">
-          <NuxtLink to="/#notre-travail" class="font-bold" @pointerover="launchMenu('#notre-travail')"
-            @click="closeMenu()">Notre travail</NuxtLink>
+          <NuxtLink to="/#notre-travail"
+            class="font-bold hover:[text-shadow:_-2px_0_black,_0_2px_black,_2px_0_black,_0_-2px_black]"
+            @pointerover="launchMenu('#notre-travail')" @click="closeMenu()">Notre travail</NuxtLink>
         </li>
         <li class="py-6">
-          <NuxtLink to="/#nos-services" class="font-bold" @pointerover="launchMenu('#nos-services')"
-            @click="closeMenu()">Nos services</NuxtLink>
+          <NuxtLink to="/#nos-services"
+            class="font-bold hover:[text-shadow:_-2px_0_black,_0_2px_black,_2px_0_black,_0_-2px_black]"
+            @pointerover="launchMenu('#nos-services')" @click="closeMenu()">Nos services</NuxtLink>
         </li>
         <li class="py-6">
-          <NuxtLink to="/#le-studio" class="font-bold" @pointerover="launchMenu('#le-studio')" @click="closeMenu()">Le
+          <NuxtLink to="/#le-studio"
+            class="font-bold hover:[text-shadow:_-2px_0_black,_0_2px_black,_2px_0_black,_0_-2px_black]"
+            @pointerover="launchMenu('#le-studio')" @click="closeMenu()">Le
             studio</NuxtLink>
         </li>
         <li class="py-6">
-          <NuxtLink to="/#contactez-nous" class="font-bold" @pointerover="closeMenu()">Contactez-nous</NuxtLink>
+          <NuxtLink to="/#contactez-nous"
+            class="font-bold hover:[text-shadow:_-2px_0_black,_0_2px_black,_2px_0_black,_0_-2px_black]"
+            @pointerover="closeMenu()">Contactez-nous</NuxtLink>
         </li>
         <li class="py-6">
           <div class="cursor-pointer" title="Accès partenaire">
@@ -165,5 +174,4 @@ nav {
   ul li svg {
     filter: drop-shadow(0 0 1px black);
   }
-}
-</style>
+}</style>

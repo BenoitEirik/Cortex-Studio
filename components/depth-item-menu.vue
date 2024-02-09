@@ -7,7 +7,7 @@
     </div>
     <div class="md:basis-1/3 shrink-0 flex md:justify-end justify-center items-start overflow-hidden">
       <video :src="srcVideo" width="200px" preload="none" autoplay loop
-        muted class="bg-gray-900 border-4 border-gray-800 rounded-xl"></video>
+        muted class="bg-gray-900 sm:border-4 border-2 border-gray-800 lg:rounded-2xl md:rounded-xl rounded-lg"></video>
     </div>
   </a>
 </li>

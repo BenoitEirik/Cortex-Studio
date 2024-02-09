@@ -3,7 +3,7 @@
   <h3 class="md:hidden block px-2 py-1 lg:text-4xl md:text-3xl text-2xl font-['ClashDisplay-Bold'] bg-gray-800 text-white"
     :class="{ 'self-start': layout === 'left', 'self-end': layout === 'right', 'text-left': layout === 'left', 'text-right': layout === 'right' }">
     {{ props.h3 }}</h3>
-  <div class="basis-1/2 md:mb-10 max-w-[800px] w-full bg-gray-900 border-4 border-gray-800 rounded overflow-hidden video-common"
+  <div class="basis-1/2 md:mb-10 max-w-[800px] w-full bg-gray-900 sm:border-4 border-2 border-gray-800 overflow-hidden video-common lg:rounded-2xl md:rounded-xl rounded-lg"
     :class="{ video_perspective_left: layout === 'left', video_perspective_right: layout === 'right', 'md:order-2 order-2': layout === 'right' }">
     <video v-if="props.srcVideo !== ''" ref="videoRef" :src="props.srcVideo" preload="none" muted loop class="w-full">{{
       props.alt }}</video>
@@ -69,7 +69,6 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
 
 <style lang="scss" scoped>
 .video-common {
-  border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   transition: transform 1s ease 0s;
 }
@@ -77,9 +76,6 @@ function playVideoFromRef(video: Ref<HTMLMediaElement | undefined>, value: boole
 .video_perspective_left {
   @screen md {
     transform: perspective(1500px) rotateY(15deg);
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    transition: transform 1s ease 0s;
 
     &:hover {
       transform: perspective(3000px) rotateY(5deg);

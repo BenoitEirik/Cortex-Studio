@@ -6,10 +6,10 @@
       <div
         class="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       <div
-        class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInLeft">
+        class="xl:basis-1/3 p-4 flex flex-col gap-8 xl:items-start items-center animate__animated animate__fadeInDown animate__delay-1s">
         <h1 class="xl:text-left text-center max-w-[600px]">
           <span class="font-['ClashDisplay-Bold'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Cortex</span><span
-            class="pl-4 font-['ClashDisplay-Light'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Studio</span>
+            class="sm:pl-4 pl-2 font-['ClashDisplay-Light'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Studio</span>
           <span class="block h-2 border-transparent" />
           <span class="lg:text-4xl md:text-3xl sm:text-2xl text-xl">est spécialisé dans le design, le film et la
             production digitale.</span>
@@ -17,13 +17,13 @@
         <NuxtLink id="cta-btn" class="lg:text-md md:text-base text-sm" to="/#notre-travail">Découvrir</NuxtLink>
       </div>
       <div id="box_video"
-        class="xl:basis-2/3 relative rounded-md pb-8 bg-black border-4 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
+        class="xl:basis-2/3 relative lg:rounded-2xl md:rounded-xl rounded-lg pb-8 bg-black sm:border-4 border-2 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src" @ended="nextLandingVideo()"
           @dblclick="landingVideoFullscreen" @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
           :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
-            class="w-4 h-4 rounded-full border-4 border-gray-800 cursor-pointer outline-1"
+            class="sm:w-4 w-3 sm:h-4 h-3 rounded-full sm:border-4 border-2 border-gray-800 cursor-pointer outline-1"
             :class="{ 'outline': i === indexLandingVideo }"
             :style="'background-color:' + v.color + ';outline-color:' + v.color" @click="nextLandingVideo(i)" />
         </div>
@@ -275,7 +275,8 @@
                 <div
                   class="absolute inset-0 p-2 flex justify-center items-center font-bold text-transparent hover:text-black hover:bg-[var(--var-color-3)] transition cursor-pointer"
                   @click="popUpModelVideo(3)">
-                  <p class="lg:text-xl md:text-lg sm:text-md text-base text-center">Design sonore et traitement du son</p>
+                  <p class="lg:text-xl md:text-lg sm:text-md text-base text-center">Design sonore et traitement du son
+                  </p>
                 </div>
               </div>
               <div class="relative basis-1/2 border border-gray-800 bg-[var(--var-color-2)]">
@@ -310,7 +311,8 @@
               transformation et le mélange des matières sonores et visuelles.
             </p>
             <blockquote>
-              <p class="pb-4 lg:text-lg md:text-md text-base italic">« Cortex Studio optimise la communication des marques. »</p>
+              <p class="pb-4 lg:text-lg md:text-md text-base italic">« Cortex Studio optimise la communication des
+                marques. »</p>
             </blockquote>
           </template>
         </ContentVideo>
@@ -351,12 +353,15 @@
     <section id="contactez-nous"
       class="pt-[var(--var-header-height)] xl:mb-8 mb-0 sm:px-4 sm:pb-4 max-w-7xl w-full text-white xl:rounded-3xl bg-[radial-gradient(circle_500px_at_50%_200px,theme('colors.slate.800'),theme('colors.gray.900'))]">
       <header class="px-8 pb-8 flex flex-col gap-4 items-center text-center">
-        <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Contactez-nous</h2>
-        <UiSubline />
+        <div class="flex flex-col gap-4 items-center">
+          <h2 class="font-['ClashDisplay-Bold'] lg:text-6xl md:text-5xl sm:text-4xl text-3xl">Contactez-nous</h2>
+          <UiSubline />
+        </div>
       </header>
       <div class="p-4 flex lg:flex-row flex-col gap-4 justify-evenly">
         <div class="basis-1/2 lg:max-w-[400px] flex flex-col">
-          <p class="shrink-0 lg:text-lg md:text-md text-base text-justify leading-8">Nous sommes ravis d'avoir suscité votre intérêt
+          <p class="shrink-0 lg:text-lg md:text-md text-base text-justify leading-8">Nous sommes ravis d'avoir suscité
+            votre intérêt
             et nous
             serions
             enchantés d'entendre parler de vous. Que ce soit pour des questions, des commentaires ou des collaborations
