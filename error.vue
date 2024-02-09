@@ -7,6 +7,7 @@
   </TresCanvas>
   <NuxtLink to="/" class="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-3 text-white border border-white rounded-md">Accueil</NuxtLink>
 </div>
+<div v-else>{{ error.statusCode }} : {{ error.statusMessage }}</div>
 </template>
 
 <script setup lang="ts">
