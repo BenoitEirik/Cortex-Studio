@@ -8,10 +8,9 @@
       @pointerover.stop="">
       <div class="grow self-stretch pl-6 py-4 flex items-center rounded-l-3xl" @pointerover="closeMenu()">
         <NuxtLink to="/">
-          <img id="logo_header" src="/images/logo.webp" alt="Cortex Studio logo"
-            class="max-w-[240px] sm:block hidden" />
-          <img id="logo_header" src="/images/logo-small-title.webp" alt="Cortex Studio logo"
-            class="max-w-[95px] sm:hidden block" />
+          <img src="/images/logo.webp" alt="Cortex Studio logo" class="logo_header max-w-[240px] sm:block hidden" />
+          <img src="/images/logo-small-title.webp" alt="Cortex Studio logo"
+            class="logo_header max-w-[95px] sm:hidden block" />
         </NuxtLink>
       </div>
       <ul
@@ -163,7 +162,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 nav {
-  #logo_header {
+  .logo_header {
     filter: drop-shadow(0 0 1px black);
   }
 
@@ -174,4 +173,5 @@ nav {
   ul li svg {
     filter: drop-shadow(0 0 1px black);
   }
-}</style>
+}
+</style>

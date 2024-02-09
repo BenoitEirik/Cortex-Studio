@@ -369,23 +369,23 @@
           <img src="/images/icons/paper-plane.svg" alt="Paper plane"
             class="m-auto grow max-w-full lg:w-60 sm:w-48 w-32" />
         </div>
-        <form class="basis-1/2 flex flex-col gap-8 items-stretch">
+        <div class="basis-1/2 flex flex-col gap-8 items-stretch">
           <span class="flex flex-col gap-4">
             <label for="form-subject" class="text-xl font-['ClashDisplay-Bold']">Sujet</label>
             <input id="form-subject" name="form-subject" type="text" inputmode="text"
               placeholder="Demande de renseignements" required
-              class="px-4 py-2 text-black border-4 border-gray-800 rounded-xl"
+              class="px-4 py-2 text-black sm:border-4 border-2 border-gray-800 rounded-xl"
               @input="(event) => formSubject = (<HTMLInputElement>event.target).value">
           </span>
           <span class="flex flex-col gap-4">
             <label for="form-msg" class="text-xl font-['ClashDisplay-Bold']">Votre message</label>
             <textarea id="form-msg" name="form-msg" inputmode="text" placeholder="Votre message" spellcheck="true"
-              required class="h-[250px] px-4 py-2 text-black border-4 border-gray-800 rounded-xl"
+              required class="h-[250px] px-4 py-2 text-black sm:border-4 border-2 border-gray-800 rounded-xl"
               @input="(event) => formBody = (<HTMLTextAreaElement>event.target).value" />
           </span>
           <a id="form-btn" class="self-center lg:text-md md:text-base text-sm"
             :href="'mailto:contact@cortexstudio.eu?&subject=[cortexstudio.fr] ' + formSubject + '&body=' + encodeURIComponent(formBody)">Envoyer</a>
-        </form>
+        </div>
       </div>
     </section>
   </div>
