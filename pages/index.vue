@@ -19,7 +19,7 @@
       <div id="box_video"
         class="xl:basis-2/3 relative lg:rounded-2xl md:rounded-xl rounded-lg pb-8 bg-black sm:border-4 border-2 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src" @ended="nextLandingVideo()"
-          @dblclick="landingVideoFullscreen" @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
+          @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
           :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
@@ -658,7 +658,6 @@ const nextLandingVideo = (index: number | undefined = undefined) => {
     landingVideoRef.value?.play()
   })
 }
-const landingVideoFullscreen = () => landingVideoRef.value?.requestFullscreen()
 
 function popUpModelVideo(index: number) {
   switch (index) {
@@ -789,4 +788,5 @@ video {
 
 blockquote p {
   text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-}</style>
+}
+</style>
