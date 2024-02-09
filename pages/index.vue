@@ -20,7 +20,8 @@
         class="xl:basis-2/3 relative lg:rounded-2xl md:rounded-xl rounded-lg pb-8 bg-black sm:border-4 border-2 border-gray-800 max-w-[800px] w-full overflow-hidden animate__animated animate__fadeIn animate__delay-1s">
         <video ref="landingVideoRef" muted :src="landingVideos[indexLandingVideo].src" @ended="nextLandingVideo()"
           @click="popUpModelVideo(landingVideos[indexLandingVideo].bgVideo)"
-          :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full" />
+          :class="{ 'cursor-pointer': landingVideos[indexLandingVideo].bgVideo !== -1 }" class="w-full"
+          style="aspect-ratio: 1024/468;" />
         <div class="absolute left-1/2 -translate-x-1/2 bottom-0 px-4 py-2 flex gap-4">
           <span v-for="(v, i) in landingVideos" :key="i"
             class="sm:w-4 w-3 sm:h-4 h-3 rounded-full sm:border-4 border-2 border-gray-800 cursor-pointer outline-1"
