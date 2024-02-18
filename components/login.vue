@@ -9,11 +9,11 @@
     <form class="flex flex-col gap-8 items-stretch" @click.prevent>
       <span class="flex flex-col gap-4">
         <label for="login_email" class="text-xl font-['ClashDisplay-Bold']">Email</label>
-        <input type="email" inputmode="email" name="login_email" placeholder="example@email.com" class="px-4 py-2 w-full text-black bg-gray-100 border-2 border-gray-800 rounded-lg">
+        <input id="login_email" type="email" inputmode="email" name="login_email" placeholder="example@email.com" class="px-4 py-2 w-full text-black bg-gray-100 border-2 border-gray-800 rounded-lg">
       </span>
       <span class="flex flex-col gap-4">
         <label for="login_password" class="text-xl font-['ClashDisplay-Bold']">Mot de passe</label>
-        <input type="password" inputmode="text" name="login_password" placeholder="Votre mot de passe" class="px-4 py-2 w-full text-black bg-gray-100 border-2 border-gray-800 rounded-lg">
+        <input id="login_password" type="password" inputmode="text" name="login_password" placeholder="Votre mot de passe" class="px-4 py-2 w-full text-black bg-gray-100 border-2 border-gray-800 rounded-lg">
       </span>
       <button type="submit" class="self-center px-4 py-2 lg:text-md md:text-base text-sm border border-gray-800 rounded-lg hover:[box-shadow:_0_2px_0_1px_gray] transition duration-100">Connexion</button>
     </form>

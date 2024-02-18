@@ -20,6 +20,7 @@
     <li>
       <button type="button" title="Accès partenaire" @click="toggle('');globalStore.showLoginForm(true)">
         <Icon name="i-iconoir-log-in" size="2rem" />
+        <span class="hidden">Menu</span>
       </button>
     </li>
   </ul>

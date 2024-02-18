@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  css: ['~/assets/css/main.scss', 'animate.css/animate.min.css'],
+  css: ['~/assets/scss/main.scss', 'animate.css/animate.min.css'],
   modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper', '@pinia/nuxt', '@nuxtjs/html-validator', '@vueuse/nuxt', 'nuxt-icon', '@nuxtjs/robots', '@tresjs/nuxt'],
   app: {
     head: {

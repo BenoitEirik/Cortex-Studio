@@ -301,8 +301,12 @@
           </template>
         </ContentVideo>
 
-        <ContentVideo id="references" src-img="http://www.cortexstudio.fr/assets/img/references.jpg"
-          alt="Image references.jpg" h3="Références" h4="Une expérience pointue">
+        <ContentVideo id="references" h3="Références" h4="Une expérience pointue">
+          <template #rawSrc>
+            <div class="p-4 grid grid-cols-4 gap-4" style="aspect-ratio: 1024/468;">
+              <img v-for="(brand, i) in brands" :key="i" :src="'/images/' + brand.src" :alt="'Logo /images/' + brand.src" class="m-auto max-h-20">
+            </div>
+          </template>
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
               La diversité des prestations auprès de nos clients grands comptes dans des domaines aussi variés que le

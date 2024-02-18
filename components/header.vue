@@ -39,6 +39,7 @@
         <li class="py-6">
           <button type="button" title="Accès partenaire" @click="globalStore.showLoginForm(true)">
             <Icon name="i-iconoir-log-in" size="1.5rem" />
+            <span class="hidden">Menu</span>
           </button>
         </li>
       </ul>
