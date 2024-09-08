@@ -28,7 +28,7 @@
   <!-- #notre-travail -->
   <LayoutDepthItemMenu index="#notre-travail" :depth-index="depthIndex">
     <DepthItemMenu href="/#showreel" title="Showreel"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/showreel.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/showreel.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Capturer</li>
@@ -39,7 +39,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#jobs" title="Métiers"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/metiers.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/metiers.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Spécialiste du contenu</li>
@@ -51,7 +51,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#experimentations" title="Expérimentations"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/references.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/references.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Captation insolite</li>
@@ -62,7 +62,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#offers" title="Offres"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/offers.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/offers.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Conseil &amp; accompagnement</li>
@@ -77,7 +77,7 @@
   <!-- #nos-services -->
   <LayoutDepthItemMenu index="#nos-services" :depth-index="depthIndex">
     <DepthItemMenu href="/#strategy" title="Stratégie"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/strategie.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/strategie.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Analyse de compétitivité</li>
@@ -90,7 +90,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#creation" title="Création"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/design.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/design.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Stage design</li>
@@ -102,7 +102,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#production" title="Production"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/prod.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/prod.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>solution complète</li>
@@ -114,7 +114,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#technology" title="Technologie"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/techno.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/techno.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>UHD workflow</li>
@@ -130,7 +130,7 @@
   <!-- #le-studio -->
   <LayoutDepthItemMenu index="#le-studio" :depth-index="depthIndex">
     <DepthItemMenu href="/#vision" title="Vision"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/vision.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/vision.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <p>
           Approche par les contenus
@@ -139,7 +139,7 @@
         </p>
       </template>
     </DepthItemMenu>
-    <DepthItemMenu href="/#model" title="Modèle" src-video="http://www.cortexstudio.fr/assets/video/stickers/model.mp4"
+    <DepthItemMenu href="/#model" title="Modèle" src-video="https://cortexstudio.eu/assets/video/stickers/model.mp4"
       class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
@@ -152,7 +152,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#references" title="Références"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/references.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/references.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Luxe</li>
@@ -164,7 +164,7 @@
       </template>
     </DepthItemMenu>
     <DepthItemMenu href="/#historical" title="Historique"
-      src-video="http://www.cortexstudio.fr/assets/video/stickers/origin.mp4" class="basis-1/2" @click="toggle('')">
+      src-video="https://cortexstudio.eu/assets/video/stickers/origin.mp4" class="basis-1/2" @click="toggle('')">
       <template #content>
         <ul class="pl-4 list-disc">
           <li>Naissance</li>

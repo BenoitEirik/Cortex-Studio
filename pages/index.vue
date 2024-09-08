@@ -50,7 +50,7 @@
     <LayoutContentVideo id="notre-travail" title="Notre travail">
       <template #content>
         <ContentVideo id="showreel"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/1-our_work-1-showreel.mp4" h3="Showreel"
           h4="Créer des expériences digitales">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -65,7 +65,7 @@
         </ContentVideo>
 
         <ContentVideo id="jobs" layout="right"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/1-our_work-2-profession.mp4" h3="Métiers"
           h4="Pure player indépendant">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -84,7 +84,7 @@
         </ContentVideo>
 
         <ContentVideo id="experimentations"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/1-our_work-3-experiment1.mp4"
           h3="Expérimentations" h4="Captures insolites">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -101,7 +101,7 @@
         </ContentVideo>
 
         <ContentVideo id="offers" layout="right"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/1-our_work-4-offers.mp4" h3="Offres"
           h4="Des offres pour les annonceurs, les agences et les producteurs">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -123,7 +123,7 @@
     <LayoutContentVideo id="nos-services" title="Nos services">
       <template #content>
         <ContentVideo id="strategy"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/2-services-1-strategy.mp4" h3="Stratégie"
           h4="Correspondre à l'ère du temps">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -152,7 +152,7 @@
         </ContentVideo>
 
         <ContentVideo id="creation" layout="right"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/2-services-2-creation.mp4" h3="Création"
           h4="L'essence et la forme">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -180,7 +180,7 @@
         </ContentVideo>
 
         <ContentVideo id="production"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/2-services-3-production.mp4" h3="Production"
           h4="De la puissance à l'acte">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -202,7 +202,7 @@
         </ContentVideo>
 
         <ContentVideo id="technology" layout="right"
-          src-video="http://www.cortexstudio.fr/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
+          src-video="https://cortexstudio.eu/assets/video/menu_movies/2-services-4-technology.mp4" h3="Technologie"
           h4="Incubateur d'inspiration">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -223,7 +223,7 @@
 
     <LayoutContentVideo id="le-studio" title="Le studio">
       <template #content>
-        <ContentVideo id="vision" src-video="http://www.cortexstudio.fr/assets/video/menu_movies/3-studio-1-vision.mp4"
+        <ContentVideo id="vision" src-video="https://cortexstudio.eu/assets/video/menu_movies/3-studio-1-vision.mp4"
           h3="Vision" h4="Expert en contenus de marques">
           <template #content>
             <p class="text-justify lg:text-lg md:text-md text-base leading-8">
@@ -397,8 +397,8 @@
 
   <!-- Need to be child of a parent with viewport size page -->
   <BackgroundVideo :display="bgVideo1" @close="(value) => bgVideo1 = Boolean(value)"
-    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/link.mp4"
-    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/link.mp4">
+    src-bg-video="https://cortexstudio.eu/assets/video/fonds/link.mp4"
+    src-main-video="https://cortexstudio.eu/assets/video/color_movies/link.mp4">
     <template #content>
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience interactive</h3>
@@ -427,8 +427,8 @@
   </BackgroundVideo>
 
   <BackgroundVideo :display="bgVideo2" @close="(value) => bgVideo2 = Boolean(value)"
-    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/prod.mp4"
-    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/prod.mp4">
+    src-bg-video="https://cortexstudio.eu/assets/video/fonds/prod.mp4"
+    src-main-video="https://cortexstudio.eu/assets/video/color_movies/prod.mp4">
     <template #content>
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expérience scénographique</h3>
@@ -457,8 +457,8 @@
   </BackgroundVideo>
 
   <BackgroundVideo :display="bgVideo3" @close="(value) => bgVideo3 = Boolean(value)"
-    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/rec.mp4"
-    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/rec.mp4">
+    src-bg-video="https://cortexstudio.eu/assets/video/fonds/rec.mp4"
+    src-main-video="https://cortexstudio.eu/assets/video/color_movies/rec.mp4">
     <template #content>
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expériences sonores</h3>
@@ -494,8 +494,8 @@
   </BackgroundVideo>
 
   <BackgroundVideo :display="bgVideo4" @close="(value) => bgVideo4 = Boolean(value)"
-    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/post.mp4"
-    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/post.mp4">
+    src-bg-video="https://cortexstudio.eu/assets/video/fonds/post.mp4"
+    src-main-video="https://cortexstudio.eu/assets/video/color_movies/post.mp4">
     <template #content>
       <article class="p-4 flex flex-col gap-4 justify-start">
         <h3 class="text-4xl">Initiateur d'expériences visuelles</h3>
@@ -521,8 +521,8 @@
   </BackgroundVideo>
 
   <BackgroundVideo :display="bgVideo5" @close="(value) => bgVideo5 = Boolean(value)"
-    src-bg-video="http://www.cortexstudio.fr/assets/video/fonds/content.mp4"
-    src-main-video="http://www.cortexstudio.fr/assets/video/color_movies/content.mp4">
+    src-bg-video="https://cortexstudio.eu/assets/video/fonds/content.mp4"
+    src-main-video="https://cortexstudio.eu/assets/video/color_movies/content.mp4">
     <template #content>
       <article class="p-4 flex flex-col gap-4 justify-start text-gray-800">
         <h3 class="text-4xl">Initiateur d'expérience digitale</h3>
@@ -619,36 +619,36 @@ watch(useElementVisibility(landingVideoRef), (value) => {
 const indexLandingVideo = ref(0)
 const landingVideos = [
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/1_intro.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/1_intro.mp4',
     color: '#fff',
     bgVideo: -1
   },
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/2_prod.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/2_prod.mp4',
     color: '#92ffa1',
     bgVideo: 2
   }
   ,
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/3_post.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/3_post.mp4',
     color: '#75d4ff',
     bgVideo: 4
   }
   ,
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/4_rec.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/4_rec.mp4',
     color: '#c724dd',
     bgVideo: 3
   }
   ,
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/5_link.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/5_link.mp4',
     color: '#fefead',
     bgVideo: 1
   }
   ,
   {
-    src: 'http://www.cortexstudio.fr/assets/video/home_movies/6_content.mp4',
+    src: 'https://cortexstudio.eu/assets/video/home_movies/6_content.mp4',
     color: '#fff',
     bgVideo: 5
   }

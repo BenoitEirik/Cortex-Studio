@@ -9,7 +9,7 @@
     </section>
 
     <section class="p-4 max-w-7xl w-full flex flex-col gap-8 items-center">
-      <video src="http://www.cortexstudio.fr/assets/video/bande_demo.mp4" preload="none" controls autoplay loop muted
+      <video src="https://cortexstudio.eu/assets/video/bande_demo.mp4" preload="none" controls autoplay loop muted
         class="max-w-full border-4 border-gray-800 rounded-2xl"></video>
     </section>
   </div>
